@@ -9,18 +9,18 @@
     content="Patch Automation, modern iş operasyonlarındaki boşlukları kapatan özel otomasyon sistemleri, backend iş akışları ve entegrasyonlar geliştirir. One Patch for all.">
 
   <!-- Canonical & hreflang -->
-  <link rel="canonical" href="https://www.patchtr.com/index-tr.html">
-  <link rel="alternate" hreflang="tr" href="https://www.patchtr.com/index-tr.html">
-  <link rel="alternate" hreflang="en" href="https://www.patchtr.com/">
-  <link rel="alternate" hreflang="x-default" href="https://www.patchtr.com/">
+  <link rel="canonical" href="https://patchtr.com/">
+  <link rel="alternate" hreflang="tr" href="https://patchtr.com/">
+  <link rel="alternate" hreflang="en" href="https://patchtr.com/en.html">
+  <link rel="alternate" hreflang="x-default" href="https://patchtr.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.patchtr.com/index-tr.html">
+  <meta property="og:url" content="https://patchtr.com/">
   <meta property="og:title" content="Patch Automation Modern İş Süreçleri için Özel Otomasyon Sistemleri">
   <meta property="og:description"
     content="Patch Automation, modern iş operasyonlarındaki boşlukları kapatan özel otomasyon sistemleri, backend iş akışları ve entegrasyonlar geliştirir.">
-  <meta property="og:image" content="https://www.patchtr.com/og-image.jpg">
+  <meta property="og:image" content="https://patchtr.com/og-image.jpg">
   <meta property="og:image:alt" content="Patch Automation marka önizleme görseli">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -33,7 +33,7 @@
   <meta name="twitter:title" content="Patch Automation Modern İş Süreçleri için Özel Otomasyon Sistemleri">
   <meta name="twitter:description"
     content="Özel otomasyon sistemleri, backend iş akışları ve entegrasyonlar ile modern iş operasyonlarındaki boşlukları kapatıyoruz.">
-  <meta name="twitter:image" content="https://www.patchtr.com/og-image.jpg">
+  <meta name="twitter:image" content="https://patchtr.com/og-image.jpg">
   <meta name="twitter:image:alt" content="Patch Automation marka önizleme görseli">
 
   <!-- Schema.org -->
@@ -42,7 +42,7 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Patch Automation",
-    "url": "https://www.patchtr.com",
+    "url": "https://patchtr.com",
     "inLanguage": "tr",
     "description": "Modern iş operasyonları için özel otomasyon sistemleri, backend iş akışları ve entegrasyonlar.",
     "founder": {
@@ -98,7 +98,7 @@
       --hero-content-shift: 0px;
       --hero-spacing-bottom-current: var(--hero-spacing-bottom);
       --topbar-offset-y: 12px;
-      --topbar-padding-factor: 1.4;
+      --topbar-padding-factor: 0.9;
       --topbar-text-size: 15.5px;
       --topbar-letter-spacing: 0.04em;
       --topbar-text-color: #4c463f;
@@ -194,15 +194,14 @@
     /* Sabit üst bar */
     .topbar {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr) auto;
       align-items: center;
       gap: 16px;
       min-height: 28px;
       position: fixed;
       top: var(--topbar-offset-y);
-      left: 50%;
-      transform: translateX(-50%);
-      width: min(calc(100% - (var(--page-padding-x) * var(--topbar-padding-factor))), var(--topbar-width));
+      left: 20px;
+      right: 20px;
       z-index: 30;
     }
 
@@ -224,15 +223,10 @@
       text-align: left;
     }
 
-    .topbar .topbar-text:nth-child(2) {
-      justify-self: center;
-      text-align: center;
-      font-size: calc(var(--topbar-text-size) - 0.5px);
-    }
-
     .topbar .topbar-text:last-child {
       justify-self: end;
       text-align: right;
+      font-size: calc(var(--topbar-text-size) - 0.5px);
     }
 
     .topbar .inline-link:hover {
@@ -812,14 +806,12 @@
 
       .topbar {
         grid-template-columns: minmax(0, 1fr) auto;
-        grid-template-areas:
-          "phone lang"
-          "brand brand";
+        grid-template-areas: "phone lang";
         align-items: start;
         justify-items: start;
         gap: 8px 14px;
-        width: calc(100% - 32px);
-        left: 16px;
+        width: calc(100% - 20px);
+        left: 10px;
         transform: none;
         top: 12px;
       }
@@ -834,24 +826,15 @@
         font-size: calc(var(--topbar-text-size) + 1px);
       }
 
-      .topbar .topbar-text:first-child,
-      .topbar .topbar-text:last-child {
+      .topbar .topbar-text:first-child {
         justify-self: start;
         text-align: left;
       }
 
-      .topbar .topbar-text:nth-child(2) {
+      .topbar .topbar-text:last-child {
         grid-area: lang;
         justify-self: end;
         text-align: right;
-      }
-
-      .topbar .topbar-text:last-child {
-        grid-area: brand;
-      }
-
-      .topbar .topbar-text:last-child {
-        display: none;
       }
 
       .hero {
@@ -944,8 +927,7 @@
   <header class="hero">
     <div class="topbar">
       <a class="topbar-text topbar-phone inline-link" href="tel:+905541561401">+90 554 156 14 01</a>
-      <a class="topbar-text inline-link" href="./index.html">EN</a>
-      <a class="topbar-text inline-link" href="#contact">Patch Automatıon</a>
+      <a class="topbar-text inline-link" href="./en.html">EN</a>
     </div>
 
     <div class="hero-container reveal">
@@ -1243,8 +1225,7 @@
             </li>
           </ul>
           <div class="solutions-cta">
-            <p class="solutions-cta-copy">Bu sistemlerden biri iş akışınıza yakın geliyorsa, doğru versiyonu gerçek
-              operasyonunuza göre birlikte tanımlayabiliriz.</p>
+            <p class="solutions-cta-copy">İş akışınıza en uygun senaryoyu belirleyelim, süreci operasyonel ihtiyaçlarınız doğrultusunda birlikte özelleştirelim</p>
             <a class="solutions-cta-link inline-link" href="#contact">İş Akışını Konuşalım</a>
           </div>
         </div>
@@ -1258,23 +1239,15 @@
           <ul class="services-list">
             <li>
               <span class="service-title" style="color: var(--cta-accent);">01</span>
-              <p class="service-copy">Operasyonlarınızı öğreniyoruz. Ücretsiz 30 dakikalık bir görüşmeyle işinizin nasıl
-                yürüdüğünü anlıyoruz: verinizi, ekibinizi, süreçlerinizi. Otomasyonlar size özel kurulur, ekibinize ve
-                mevcut sisteminize uyum sağlar. Bu yüzden iyi bir değerlendirme süreci kaçınılmazdır.</p>
+              <p class="service-copy">Operasyonlarınızı analiz ediyoruz. İlk aşamada işletmenizi, ekip yapınızı ve mevcut süreçlerinizi detaylı şekilde inceliyoruz. Amaç, işleyişinizi net ve bütüncül bir şekilde ortaya koymak.</p>
             </li>
             <li>
               <span class="service-title" style="color: var(--cta-accent);">02</span>
-              <p class="service-copy">Uyumu değerlendiriyoruz. Her iş akışı otomasyona uygun değildir. İşimizi şeffaf ve
-                dürüst yürütmek temel prensibimizdir. Bu nedenle çalışma biçiminize gerçekten entegre olacak bir
-                otomasyon
-                kurup kurulamayacağını size bildiririz.
-              </p>
+              <p class="service-copy">Uygunluğu değerlendiriyoruz. Her süreç otomasyona uygun değildir. Şeffaf bir yaklaşımla, işleyişinize gerçekten entegre olabilecek bir çözümün mümkün olup olmadığını net şekilde belirtiyoruz.</p>
             </li>
             <li>
               <span class="service-title" style="color: var(--cta-accent);">03</span>
-              <p class="service-copy">Eğer uyumluysa, planı detaylıca birlikte
-                belirliyoruz. İşletmenize özel otomasyonunuzu titizlikle tasarlıyor ve devreye
-                alıyoruz.</p>
+              <p class="service-copy">Tasarlıyor ve devreye alıyoruz. Uygunluk sağlandığında, çözümü birlikte planlıyor ve işletmenize özel sistemi tasarlıyoruz. Kurulan yapı, operasyonlarınıza entegre edilerek doğrudan iş akışınızın bir parçası haline gelir.</p>
             </li>
           </ul>
         </div>
@@ -1285,7 +1258,7 @@
       <div class="section-layout">
         <div class="section-label" style="color: var(--cta-accent);">İletişim</div>
         <div class="section-content">
-          <h2 class="contact-heading">İletişime geçin.</h2>
+          <h2 class="contact-heading">Bizimle iletişime geçin.</h2>
           <ul class="contact-list">
             <li>
               <strong>Telefon</strong>
@@ -1349,7 +1322,7 @@
       documentRoot.style.setProperty("--hero-layout-min-height", `${heroMinHeightCurrent}px`);
       documentRoot.style.setProperty("--hero-spacing-bottom-current", `${heroBottomPaddingCurrent}px`);
       documentRoot.style.setProperty("--topbar-offset-y", `${12 - (4 * easedProgress)}px`);
-      documentRoot.style.setProperty("--topbar-padding-factor", `${1.4 + (0.5 * easedProgress)}`);
+      documentRoot.style.setProperty("--topbar-padding-factor", `${0.9 + (0.35 * easedProgress)}`);
       documentRoot.style.setProperty("--topbar-text-size", `${15.5 - (3 * easedProgress)}px`);
       documentRoot.style.setProperty("--topbar-letter-spacing", `${0.04 - (0.008 * easedProgress)}em`);
       documentRoot.style.setProperty("--topbar-text-color", `rgb(${Math.round(76 + ((114 - 76) * easedProgress))} ${Math.round(70 + ((114 - 70) * easedProgress))} ${Math.round(63 + ((107 - 63) * easedProgress))})`);
@@ -1464,3 +1437,5 @@
 </body>
 
 </html>
+
+
