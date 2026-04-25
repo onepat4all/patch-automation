@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,17 @@
   <meta name="description" content="Patch Automation builds custom automation systems, backend workflows, and integrations that close the gaps in modern business operations. One Patch for all.">
 
   <!-- Canonical & hreflang -->
-  <link rel="canonical" href="https://www.patchtr.com/">
-  <link rel="alternate" hreflang="en" href="https://www.patchtr.com/">
-  <link rel="alternate" hreflang="tr" href="https://www.patchtr.com/index-tr.html">
-  <link rel="alternate" hreflang="x-default" href="https://www.patchtr.com/">
+  <link rel="canonical" href="https://patchtr.com/en.html">
+  <link rel="alternate" hreflang="tr" href="https://patchtr.com/">
+  <link rel="alternate" hreflang="en" href="https://patchtr.com/en.html">
+  <link rel="alternate" hreflang="x-default" href="https://patchtr.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.patchtr.com/">
+  <meta property="og:url" content="https://patchtr.com/en.html">
   <meta property="og:title" content="Patch Automation Custom Systems for Modern Business Workflows">
-  <meta property="og:description" content="Patch Automation builds custom automation systems, backend workflows, and integrations that close the gaps in modern business operations. One Patch for all.">
-  <meta property="og:image" content="https://www.patchtr.com/og-image.jpg">
+  <meta property="og:description" content="Patch Automation builds custom automation systems, backend workflows, and integrations that close the gaps in modern business operations.">
+  <meta property="og:image" content="https://patchtr.com/og-image.jpg">
   <meta property="og:image:alt" content="Patch Automation brand preview image">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -29,7 +30,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Patch Automation Custom Systems for Modern Business Workflows">
   <meta name="twitter:description" content="Custom automation systems, backend workflows and integrations that close the gaps in modern business operations.">
-  <meta name="twitter:image" content="https://www.patchtr.com/og-image.jpg">
+  <meta name="twitter:image" content="https://patchtr.com/og-image.jpg">
   <meta name="twitter:image:alt" content="Patch Automation brand preview image">
 
   <!-- Schema.org -->
@@ -38,7 +39,7 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Patch Automation",
-    "url": "https://www.patchtr.com",
+    "url": "https://patchtr.com",
     "inLanguage": "en",
     "description": "Custom automation systems, backend workflows, and integrations for modern business operations.",
     "founder": {
@@ -58,7 +59,9 @@
   <link rel="shortcut icon" href="P.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English+SC&family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English+SC&family=IM+Fell+French+Canon+SC&display=swap"
+    rel="stylesheet">
   <style>
     /* Temel tema ve scroll animasyonunda JS tarafından güncellenen değişkenler */
     :root {
@@ -92,7 +95,7 @@
       --hero-content-shift: 0px;
       --hero-spacing-bottom-current: var(--hero-spacing-bottom);
       --topbar-offset-y: 12px;
-      --topbar-padding-factor: 1.4;
+      --topbar-padding-factor: 0.9;
       --topbar-text-size: 15.5px;
       --topbar-letter-spacing: 0.04em;
       --topbar-text-color: #4c463f;
@@ -188,15 +191,14 @@
     /* Sabit üst bar */
     .topbar {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr) auto;
       align-items: center;
       gap: 16px;
       min-height: 28px;
       position: fixed;
       top: var(--topbar-offset-y);
-      left: 50%;
-      transform: translateX(-50%);
-      width: min(calc(100% - (var(--page-padding-x) * var(--topbar-padding-factor))), var(--topbar-width));
+      left: 20px;
+      right: 20px;
       z-index: 30;
     }
 
@@ -218,15 +220,10 @@
       text-align: left;
     }
 
-    .topbar .topbar-text:nth-child(2) {
-      justify-self: center;
-      text-align: center;
-      font-size: calc(var(--topbar-text-size) - 0.5px);
-    }
-
     .topbar .topbar-text:last-child {
       justify-self: end;
       text-align: right;
+      font-size: calc(var(--topbar-text-size) - 0.5px);
     }
 
     .topbar .inline-link:hover {
@@ -432,7 +429,7 @@
     }
 
     /* Sticky label:
-       Why Patch ve Solutions etiketleri navbarın altında takip etsin. */
+       Neden Patch ve Çözümler etiketleri navbarın altında takip etsin. */
     .section-label.is-sticky {
       position: sticky;
       top: calc(var(--topbar-offset-y) + 48px);
@@ -453,7 +450,7 @@
       color: var(--accent);
     }
 
-    .about-copy + .about-copy {
+    .about-copy+.about-copy {
       margin-top: 24px;
     }
 
@@ -595,7 +592,7 @@
       padding-bottom: 24px;
     }
 
-    .solution-description > p,
+    .solution-description>p,
     .solution-meta-copy,
     .solutions-cta-copy {
       margin: 0;
@@ -604,11 +601,11 @@
       color: var(--muted);
     }
 
-    .solution-description > p {
+    .solution-description>p {
       font-style: italic;
     }
 
-    .solution-description > p + .solution-meta-list {
+    .solution-description>p+.solution-meta-list {
       margin-top: 18px;
     }
 
@@ -666,7 +663,7 @@
       color: var(--cta-accent);
     }
 
-    /* Contact alanı */
+    /* İletişim alanı */
     .contact-heading {
       margin: 0;
       font-size: clamp(1.3rem, 1.85vw, 1.72rem);
@@ -806,14 +803,12 @@
 
       .topbar {
         grid-template-columns: minmax(0, 1fr) auto;
-        grid-template-areas:
-          "phone lang"
-          "brand brand";
+        grid-template-areas: "phone lang";
         align-items: start;
         justify-items: start;
         gap: 8px 14px;
-        width: calc(100% - 32px);
-        left: 16px;
+        width: calc(100% - 20px);
+        left: 10px;
         transform: none;
         top: 12px;
       }
@@ -828,24 +823,15 @@
         font-size: calc(var(--topbar-text-size) + 1px);
       }
 
-      .topbar .topbar-text:first-child,
-      .topbar .topbar-text:last-child {
+      .topbar .topbar-text:first-child {
         justify-self: start;
         text-align: left;
       }
 
-      .topbar .topbar-text:nth-child(2) {
+      .topbar .topbar-text:last-child {
         grid-area: lang;
         justify-self: end;
         text-align: right;
-      }
-
-      .topbar .topbar-text:last-child {
-        grid-area: brand;
-      }
-
-      .topbar .topbar-text:last-child {
-        display: none;
       }
 
       .hero {
@@ -931,35 +917,14 @@
         padding: 22px 0 30px;
       }
     }
-    /* About bölümü */
-    .about-profile {
-      display: grid;
-      gap: 20px;
-      max-width: var(--content-measure);
-    }
-
-    .about-name {
-      margin: 0 0 4px;
-      font-size: clamp(1.3rem, 1.85vw, 1.72rem);
-      line-height: 1.4;
-      color: var(--text);
-    }
-
-    .about-role {
-      margin: 0 0 20px;
-      font-size: clamp(1.05rem, 1.18vw, 1.14rem);
-      line-height: 1.78;
-      color: var(--muted-soft);
-    }
-
   </style>
 </head>
+
 <body>
   <header class="hero">
     <div class="topbar">
       <a class="topbar-text topbar-phone inline-link" href="tel:+905541561401">+90 554 156 14 01</a>
-      <a class="topbar-text inline-link" href="./index-tr.html">TR</a>
-      <a class="topbar-text inline-link" href="#contact">Patch Automation</a>
+      <a class="topbar-text inline-link" href="./index.html">TR</a>
     </div>
 
     <div class="hero-container reveal">
@@ -986,9 +951,9 @@
       <div class="section-layout">
         <div class="section-label is-sticky">Why Patch</div>
         <div class="section-content">
-          <p class="why-copy">Lack of system integration within businesses leads to fragmented processes, data loss, and increased manual workload.</p>
-          <p class="why-copy" style="margin-top: 28px;">Patch restructures this fragmented environment through systems tailored to each business. It integrates processes, minimizes repetitive manual tasks, and eliminates them entirely where applicable.</p>
-          <p class="why-copy" style="margin-top: 28px;">This approach enhances operational efficiency while ensuring long-term process sustainability.</p>
+          <p class="why-copy">Lack of integration between business systems leads to fragmented processes, lost data, and heavy manual workload.</p>
+          <p class="why-copy" style="margin-top: 28px;">Patch redesigns that structure with custom-built systems tailored to each business. It connects workflows, reduces repetitive manual work, and removes it entirely where the process allows.</p>
+          <p class="why-copy" style="margin-top: 28px;">This approach improves operational efficiency while making processes more sustainable over time.</p>
         </div>
       </div>
     </section>
@@ -997,24 +962,24 @@
       <div class="section-layout">
         <div class="section-label is-sticky">Solutions</div>
         <div class="section-content">
-          <p class="contact-intro solutions-intro">Explore the system fit first, then we can shape the right implementation together.</p>
+          <p class="contact-intro solutions-intro">Start by seeing which system fits your workflow, then we can shape the right structure around it together.</p>
           <ul class="solutions-list">
             <li class="solution-item is-open">
               <button class="solution-trigger" type="button" aria-expanded="true" aria-controls="solution-panel-01" id="solution-trigger-01">
-                <span class="solution-title">Customizable AI Solutions</span>
+                <span class="solution-title">Custom AI Solutions</span>
                 <span class="solution-index">01</span>
                 <span class="solution-state" aria-hidden="true">+</span>
               </button>
               <div class="solution-description" id="solution-panel-01" role="region" aria-labelledby="solution-trigger-01">
-                <p>AI supported systems shaped around your business model, team structure, and operational reality. These solutions are not locked into a single template; the goal is to close the points in your workflow where time is lost and growth slows down.</p>
+                <p>AI-enabled systems shaped around your business model, team structure, and operational reality. These solutions are not locked into a single template; the goal is to close the gaps that waste time or slow growth with the right automation structure.</p>
                 <div class="solution-meta-list">
                   <div class="solution-meta">
                     <span class="solution-meta-label">Best For</span>
-                    <p class="solution-meta-copy">Teams that need more than an off-the-shelf tool and want AI or automation designed around their own processes.</p>
+                    <p class="solution-meta-copy">Teams that need more than off-the-shelf tools and want AI and automation systems built around their actual processes.</p>
                   </div>
                   <div class="solution-meta">
                     <span class="solution-meta-label">Typical Flow</span>
-                    <p class="solution-meta-copy">Process review, bottleneck mapping, AI layer selection, tool integrations, and workflow design embedded into daily operations.</p>
+                    <p class="solution-meta-copy">Process analysis, bottleneck identification, AI layer selection, tool integrations, and workflow design built into real operations.</p>
                   </div>
                 </div>
               </div>
@@ -1026,15 +991,15 @@
                 <span class="solution-state" aria-hidden="true">+</span>
               </button>
               <div class="solution-description" id="solution-panel-02" role="region" aria-labelledby="solution-trigger-02">
-                <p>AI supported voice handling flows for incoming calls, qualification, routing, and first-response communication.</p>
+                <p>AI-powered systems that handle call answering, first response, qualification, and routing for incoming calls.</p>
                 <div class="solution-meta-list">
                   <div class="solution-meta">
                     <span class="solution-meta-label">Best For</span>
-                    <p class="solution-meta-copy">Teams that miss calls, repeat the same first questions, or need 24/7 intake coverage.</p>
+                    <p class="solution-meta-copy">Teams that miss calls, repeatedly handle first conversations manually, or need 24/7 response coverage.</p>
                   </div>
                   <div class="solution-meta">
                     <span class="solution-meta-label">Typical Flow</span>
-                    <p class="solution-meta-copy">Incoming call, caller intent detection, lead qualification, routing to the right person, and CRM logging.</p>
+                    <p class="solution-meta-copy">Call answering, need qualification, lead pre-screening, routing to the right person, and CRM logging.</p>
                   </div>
                 </div>
               </div>
@@ -1046,7 +1011,7 @@
                 <span class="solution-state" aria-hidden="true">+</span>
               </button>
               <div class="solution-description" id="solution-panel-03" role="region" aria-labelledby="solution-trigger-03">
-                <p>Automated scheduling structures that manage availability, booking updates, reminders, and customer coordination.</p>
+                <p>Systems that automate availability management, booking updates, reminders, and customer scheduling coordination.</p>
                 <div class="solution-meta-list">
                   <div class="solution-meta">
                     <span class="solution-meta-label">Best For</span>
@@ -1066,15 +1031,15 @@
                 <span class="solution-state" aria-hidden="true">+</span>
               </button>
               <div class="solution-description" id="solution-panel-04" role="region" aria-labelledby="solution-trigger-04">
-                <p>Retrieval based AI systems that answer from your own documents, internal knowledge, and operational data sources.</p>
+                <p>Retrieval-based AI systems that answer from your own documents, operational knowledge, and internal data sources.</p>
                 <div class="solution-meta-list">
                   <div class="solution-meta">
                     <span class="solution-meta-label">Best For</span>
-                    <p class="solution-meta-copy">Businesses with large internal documentation, SOPs, catalogs, or support knowledge spread across files.</p>
+                    <p class="solution-meta-copy">Businesses whose knowledge is spread across documents, SOPs, catalogs, or support resources.</p>
                   </div>
                   <div class="solution-meta">
                     <span class="solution-meta-label">Typical Flow</span>
-                    <p class="solution-meta-copy">Question intake, source retrieval, grounded answer generation, and optional handoff to a team member.</p>
+                    <p class="solution-meta-copy">Question intake, source retrieval, grounded answer generation, and escalation to a human when needed.</p>
                   </div>
                 </div>
               </div>
@@ -1086,15 +1051,15 @@
                 <span class="solution-state" aria-hidden="true">+</span>
               </button>
               <div class="solution-description" id="solution-panel-05" role="region" aria-labelledby="solution-trigger-05">
-                <p>Automated image generation pipelines for branded assets, campaign visuals, and repeatable content production tasks.</p>
+                <p>Automated image-generation pipelines for branded assets, campaign visuals, and repeatable content production.</p>
                 <div class="solution-meta-list">
                   <div class="solution-meta">
                     <span class="solution-meta-label">Best For</span>
-                    <p class="solution-meta-copy">Brands and teams producing frequent campaign assets, product visuals, or social first image sets.</p>
+                    <p class="solution-meta-copy">Brands and teams producing frequent campaign assets, product visuals, or social-first image sets.</p>
                   </div>
                   <div class="solution-meta">
                     <span class="solution-meta-label">Typical Flow</span>
-                    <p class="solution-meta-copy">Prompt template setup, asset generation, approval filtering, file delivery, and publishing-ready output.</p>
+                    <p class="solution-meta-copy">Prompt templates, asset generation, approval filtering, file delivery, and publishing-ready output.</p>
                   </div>
                 </div>
               </div>
@@ -1106,11 +1071,11 @@
                 <span class="solution-state" aria-hidden="true">+</span>
               </button>
               <div class="solution-description" id="solution-panel-06" role="region" aria-labelledby="solution-trigger-06">
-                <p>Systems that organize publishing, content flow, approvals, and cross-platform posting with less manual effort.</p>
+                <p>Systems that streamline publishing, content flow, approvals, and cross-platform posting with less manual effort.</p>
                 <div class="solution-meta-list">
                   <div class="solution-meta">
                     <span class="solution-meta-label">Best For</span>
-                    <p class="solution-meta-copy">Small teams handling content manually across multiple channels and approval steps.</p>
+                    <p class="solution-meta-copy">Small teams still handling content and approval workflows manually across multiple channels.</p>
                   </div>
                   <div class="solution-meta">
                     <span class="solution-meta-label">Typical Flow</span>
@@ -1126,11 +1091,11 @@
                 <span class="solution-state" aria-hidden="true">+</span>
               </button>
               <div class="solution-description" id="solution-panel-07" role="region" aria-labelledby="solution-trigger-07">
-                <p>Web experiences designed to match your brand, communicate clearly, and support the automation systems behind your business.</p>
+                <p>Web experiences designed to fit your brand, communicate clearly, and support the automation systems behind your business.</p>
                 <div class="solution-meta-list">
                   <div class="solution-meta">
                     <span class="solution-meta-label">Best For</span>
-                    <p class="solution-meta-copy">Businesses that need a cleaner digital front door tied directly to lead capture or service workflows.</p>
+                    <p class="solution-meta-copy">Businesses that need a stronger digital front door connected to lead capture or service workflows.</p>
                   </div>
                   <div class="solution-meta">
                     <span class="solution-meta-label">Typical Flow</span>
@@ -1146,15 +1111,15 @@
                 <span class="solution-state" aria-hidden="true">+</span>
               </button>
               <div class="solution-description" id="solution-panel-08" role="region" aria-labelledby="solution-trigger-08">
-                <p>Conversational systems for lead capture, support handling, FAQs, and process guidance across customer touchpoints.</p>
+                <p>Conversational systems for lead capture, support workflows, FAQs, and guided user interactions.</p>
                 <div class="solution-meta-list">
                   <div class="solution-meta">
                     <span class="solution-meta-label">Best For</span>
-                    <p class="solution-meta-copy">Websites or internal teams that handle repeated customer questions and first-line support volume.</p>
+                    <p class="solution-meta-copy">Teams dealing with repeated website questions or heavy first-line support volume.</p>
                   </div>
                   <div class="solution-meta">
                     <span class="solution-meta-label">Typical Flow</span>
-                    <p class="solution-meta-copy">User question, guided response path, data capture, escalation when needed, and transcript logging.</p>
+                    <p class="solution-meta-copy">User question, guided response path, data capture, human handoff when needed, and transcript logging.</p>
                   </div>
                 </div>
               </div>
@@ -1166,15 +1131,15 @@
                 <span class="solution-state" aria-hidden="true">+</span>
               </button>
               <div class="solution-description" id="solution-panel-09" role="region" aria-labelledby="solution-trigger-09">
-                <p>Automated flows for payment reminders, invoice notifications, and follow-up on overdue balances without adding manual finance workload.</p>
+                <p>Automated flows for payment reminders, invoice notifications, and overdue follow-up with less manual finance workload.</p>
                 <div class="solution-meta-list">
                   <div class="solution-meta">
                     <span class="solution-meta-label">Best For</span>
-                    <p class="solution-meta-copy">Businesses that want more consistent collection follow-up and fewer manual reminder tasks.</p>
+                    <p class="solution-meta-copy">Businesses that want more consistent collections follow-up and fewer manual reminder tasks.</p>
                   </div>
                   <div class="solution-meta">
                     <span class="solution-meta-label">Typical Flow</span>
-                    <p class="solution-meta-copy">Invoice issued, reminder schedule triggered, overdue follow-up sequence started, and payment status updated.</p>
+                    <p class="solution-meta-copy">Invoice issued, reminder schedule triggered, overdue sequence started, and payment status updated.</p>
                   </div>
                 </div>
               </div>
@@ -1186,22 +1151,22 @@
                 <span class="solution-state" aria-hidden="true">+</span>
               </button>
               <div class="solution-description" id="solution-panel-10" role="region" aria-labelledby="solution-trigger-10">
-                <p>Post-service systems that collect satisfaction feedback, request reviews, and route negative responses directly to your internal team.</p>
+                <p>Post-service systems that collect feedback, request reviews, and route negative responses directly to your internal team.</p>
                 <div class="solution-meta-list">
                   <div class="solution-meta">
                     <span class="solution-meta-label">Best For</span>
-                    <p class="solution-meta-copy">Service businesses that want stronger review generation and faster handling of unhappy customers.</p>
+                    <p class="solution-meta-copy">Service businesses that want stronger review generation and faster handling of dissatisfied customers.</p>
                   </div>
                   <div class="solution-meta">
                     <span class="solution-meta-label">Typical Flow</span>
-                    <p class="solution-meta-copy">Service completed, feedback request sent, positive users nudged toward a public review, and negative feedback escalated internally.</p>
+                    <p class="solution-meta-copy">Service completed, feedback request sent, happy users nudged toward a public review, and negative feedback escalated internally.</p>
                   </div>
                 </div>
               </div>
             </li>
           </ul>
           <div class="solutions-cta">
-            <p class="solutions-cta-copy">If one of these systems feels close to your workflow, we can define the right version around your actual business constraints.</p>
+            <p class="solutions-cta-copy">If one of these systems feels close to your workflow, we can define the right version around your actual operating constraints.</p>
             <a class="solutions-cta-link inline-link" href="#contact">Discuss Your Workflow</a>
           </div>
         </div>
@@ -1215,15 +1180,15 @@
           <ul class="services-list">
             <li>
               <span class="service-title" style="color: var(--cta-accent);">01</span>
-              <p class="service-copy"><strong>We analyze your operations.</strong><br>Through an initial 30 minute consultation, we gain a clear understanding of how your business operates, including your data, team, and processes. Since each system is tailored to your organization and must align with your existing workflows, a thorough evaluation is essential.</p>
+              <p class="service-copy"><strong>We analyze your operations.</strong><br>In the first stage, we examine your business, team structure, and existing processes in detail. The goal is to clearly understand your operations as a whole.</p>
             </li>
             <li>
               <span class="service-title" style="color: var(--cta-accent);">02</span>
-              <p class="service-copy"><strong>We assess compatibility.</strong><br>Not every workflow is suitable for automation. Transparency and honesty are core principles in how we work. We determine and clearly communicate whether a solution can be effectively integrated into your way of operating.</p>
+              <p class="service-copy"><strong>We assess compatibility.</strong><br>Not every process is suitable for automation. With a transparent approach, we clearly determine whether a solution can be effectively integrated into your operations.</p>
             </li>
             <li>
               <span class="service-title" style="color: var(--cta-accent);">03</span>
-              <p class="service-copy"><strong>If aligned, we plan and build together.</strong><br>We define the implementation plan in detail and design a system tailored specifically to your business. The solution is then carefully developed and deployed into your operations.</p>
+              <p class="service-copy"><strong>We design and implement.</strong><br>Once alignment is confirmed, we define the plan together and design a system tailored to your business. The solution is integrated into your operations and becomes a direct part of your workflow.</p>
             </li>
           </ul>
         </div>
@@ -1297,7 +1262,7 @@
       documentRoot.style.setProperty("--hero-layout-min-height", `${heroMinHeightCurrent}px`);
       documentRoot.style.setProperty("--hero-spacing-bottom-current", `${heroBottomPaddingCurrent}px`);
       documentRoot.style.setProperty("--topbar-offset-y", `${12 - (4 * easedProgress)}px`);
-      documentRoot.style.setProperty("--topbar-padding-factor", `${1.4 + (0.5 * easedProgress)}`);
+      documentRoot.style.setProperty("--topbar-padding-factor", `${0.9 + (0.35 * easedProgress)}`);
       documentRoot.style.setProperty("--topbar-text-size", `${15.5 - (3 * easedProgress)}px`);
       documentRoot.style.setProperty("--topbar-letter-spacing", `${0.04 - (0.008 * easedProgress)}em`);
       documentRoot.style.setProperty("--topbar-text-color", `rgb(${Math.round(76 + ((114 - 76) * easedProgress))} ${Math.round(70 + ((114 - 70) * easedProgress))} ${Math.round(63 + ((107 - 63) * easedProgress))})`);
@@ -1410,4 +1375,7 @@
     }
   </script>
 </body>
+
 </html>
+
+
