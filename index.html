@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patch Automation Custom Systems for Modern Business Workflows</title>
+  <meta name="description" content="Patch Automation builds custom automation systems, backend workflows, and integrations that close the gaps in modern business operations. One Patch for all.">
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://www.patchtr.com/">
+  <link rel="alternate" hreflang="en" href="https://www.patchtr.com/">
+  <link rel="alternate" hreflang="tr" href="https://www.patchtr.com/index-tr.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.patchtr.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.patchtr.com/">
+  <meta property="og:title" content="Patch Automation Custom Systems for Modern Business Workflows">
+  <meta property="og:description" content="Patch Automation builds custom automation systems, backend workflows, and integrations that close the gaps in modern business operations. One Patch for all.">
+  <meta property="og:image" content="https://www.patchtr.com/og-image.jpg">
+  <meta property="og:image:alt" content="Patch Automation brand preview image">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:site_name" content="Patch Automation">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Patch Automation Custom Systems for Modern Business Workflows">
+  <meta name="twitter:description" content="Custom automation systems, backend workflows and integrations that close the gaps in modern business operations.">
+  <meta name="twitter:image" content="https://www.patchtr.com/og-image.jpg">
+  <meta name="twitter:image:alt" content="Patch Automation brand preview image">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Patch Automation",
+    "url": "https://www.patchtr.com",
+    "inLanguage": "en",
+    "description": "Custom automation systems, backend workflows, and integrations for modern business operations.",
+    "founder": {
+      "@type": "Person",
+      "name": "Efe Muhsin Pat"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+90-554-156-14-01",
+      "email": "efe@patchtr.com",
+      "contactType": "customer service"
+    }
+  }
+  </script>
+
+  <link rel="icon" href="P.svg" type="image/svg+xml" sizes="any">
+  <link rel="shortcut icon" href="P.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English+SC&family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
+  <style>
+    /* Temel tema ve scroll animasyonunda JS tarafından güncellenen değişkenler */
+    :root {
+      --bg: #f5f5f2;
+      --text: #111111;
+      --muted: #595953;
+      --muted-soft: #72726b;
+      --line: rgba(0, 0, 0, 0.09);
+      --line-soft: rgba(0, 0, 0, 0.06);
+      --container-width: 1160px;
+      --hero-container-width: 1480px;
+      --topbar-width: 1720px;
+      --page-padding-x: clamp(24px, 4vw, 48px);
+      --section-label-width: clamp(200px, 20vw, 236px);
+      --section-gap: clamp(28px, 4vw, 56px);
+      --content-measure: 640px;
+      --hero-content-width: 680px;
+      --hero-spacing-top: clamp(40px, 7vw, 84px);
+      --hero-spacing-bottom: clamp(88px, 14vw, 132px);
+      --section-spacing: clamp(100px, 11vw, 136px);
+      --hero-main-scale: 1.28;
+      --hero-sub-opacity: 1;
+      --hero-sub-offset: 0px;
+      --hero-sub-margin-top: 8px;
+      --hero-sub-gap: 1px;
+      --hero-support-opacity: 1;
+      --hero-support-offset: 0px;
+      --hero-next-section-peek: 84px;
+      --hero-shell-min-height: calc(100svh - var(--hero-next-section-peek));
+      --hero-layout-min-height: calc(100svh - 168px - var(--hero-next-section-peek));
+      --hero-content-shift: 0px;
+      --hero-spacing-bottom-current: var(--hero-spacing-bottom);
+      --topbar-offset-y: 12px;
+      --topbar-padding-factor: 1.4;
+      --topbar-text-size: 15.5px;
+      --topbar-letter-spacing: 0.04em;
+      --topbar-text-color: #4c463f;
+      --topbar-text-opacity: 1;
+      --topbar-text-scale: 1;
+      --accent: #3a302d;
+      --cta-accent: #510101;
+      --accent-contrast: #f5f5f2;
+    }
+
+    /* Genel temel stiller */
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: clip;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "EB Garamond", "Times New Roman", serif;
+      font-weight: 400;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: clip;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a,
+    button {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a:focus,
+    button:focus {
+      outline: none;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 1px solid rgba(81, 1, 1, 0.28);
+      outline-offset: 3px;
+    }
+
+    ::selection {
+      background: rgba(17, 17, 17, 0.12);
+    }
+
+    /* Yerleşim kapsayıcıları */
+    .content-shell {
+      width: min(calc(100% - (var(--page-padding-x) * 2)), var(--container-width));
+      margin: 0 auto;
+    }
+
+    .hero-container {
+      width: min(calc(100% - (var(--page-padding-x) * 2)), var(--hero-container-width));
+      margin: 0 auto;
+    }
+
+    /* Ortak tipografi stilleri */
+    .topbar-text,
+    .section-label,
+    .service-title {
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .topbar-phone {
+      font-family: "IM Fell French Canon SC", "Times New Roman", serif;
+    }
+
+    .topbar .topbar-phone {
+      font-size: calc(var(--topbar-text-size) + 4px);
+    }
+
+    /* Hero alanı:
+       Aşağıdaki min-height ve padding değerleri scroll sırasında JS tarafından değiştirilir.
+       Bu değerleri değiştirirken topbar hizası ve first-fold davranışı da etkilenir. */
+    .hero {
+      min-height: var(--hero-shell-min-height);
+      padding: 112px 0 var(--hero-spacing-bottom-current);
+    }
+
+    /* Sabit üst bar */
+    .topbar {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      align-items: center;
+      gap: 16px;
+      min-height: 28px;
+      position: fixed;
+      top: var(--topbar-offset-y);
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(calc(100% - (var(--page-padding-x) * var(--topbar-padding-factor))), var(--topbar-width));
+      z-index: 30;
+    }
+
+    .topbar-text {
+      font-size: var(--topbar-text-size);
+      line-height: 1.45;
+      color: var(--topbar-text-color);
+      white-space: nowrap;
+      font-weight: 700;
+      transform-origin: center;
+      letter-spacing: var(--topbar-letter-spacing);
+      opacity: var(--topbar-text-opacity);
+      transform: scale(var(--topbar-text-scale));
+      transition: color 180ms ease, opacity 180ms ease, transform 180ms ease;
+    }
+
+    .topbar .topbar-text:first-child {
+      justify-self: start;
+      text-align: left;
+    }
+
+    .topbar .topbar-text:nth-child(2) {
+      justify-self: center;
+      text-align: center;
+      font-size: calc(var(--topbar-text-size) - 0.5px);
+    }
+
+    .topbar .topbar-text:last-child {
+      justify-self: end;
+      text-align: right;
+    }
+
+    .topbar .inline-link:hover {
+      opacity: 1;
+      color: var(--cta-accent);
+    }
+
+    .inline-link {
+      position: relative;
+      transition: opacity 180ms ease;
+    }
+
+    .inline-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+
+    .inline-link:hover {
+      opacity: 0.68;
+    }
+
+    .inline-link:hover::after {
+      transform: scaleX(1);
+    }
+
+
+    /* Section iskeleti:
+       Sol tarafta label, sağ tarafta içerik olacak şekilde iki kolonlu yapı. */
+    .section-layout {
+      display: grid;
+      grid-template-columns: var(--section-label-width) minmax(0, 1fr);
+      column-gap: var(--section-gap);
+      align-items: start;
+    }
+
+    /* Hero iç yerleşimi */
+    .hero-layout {
+      display: flex;
+      justify-content: center;
+      padding-top: var(--hero-spacing-top);
+      min-height: var(--hero-layout-min-height);
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: var(--hero-content-width);
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      transform: translateY(var(--hero-content-shift));
+      transition: transform 260ms ease;
+    }
+
+    .hero-wordmark {
+      margin: 0;
+      width: 100%;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .hero-wordmark-main,
+    .hero-wordmark-sub {
+      display: block;
+    }
+
+    .hero-wordmark-main {
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: clamp(4.5rem, 7vw, 5.5rem);
+      line-height: 0.92;
+      font-weight: 700;
+      transform: scale(var(--hero-main-scale));
+      transform-origin: center bottom;
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .hero-wordmark-stack {
+      margin-top: var(--hero-sub-margin-top);
+      display: grid;
+      gap: var(--hero-sub-gap);
+      width: 100%;
+      justify-items: center;
+      opacity: var(--hero-sub-opacity);
+      transform: translateY(var(--hero-sub-offset));
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .hero-wordmark-sub {
+      width: 100%;
+      text-align: center;
+      font-family: "EB Garamond", "Times New Roman", serif;
+      font-size: clamp(1.85rem, 2.8vw, 2.5rem);
+      line-height: 0.94;
+      font-weight: 400;
+      letter-spacing: 0;
+      color: var(--text);
+    }
+
+    .hero-summary {
+      margin: 22px 0 0;
+      max-width: 500px;
+      font-size: clamp(0.98rem, 1.18vw, 1.08rem);
+      line-height: 1.48;
+      color: var(--muted);
+      text-align: center;
+      opacity: var(--hero-support-opacity);
+      transform: translateY(var(--hero-support-offset));
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .hero-tagline {
+      margin: 18px 0 0;
+      font-size: clamp(1rem, 1.18vw, 1.08rem);
+      line-height: 1.48;
+      color: var(--muted-soft);
+      text-align: center;
+      font-style: italic;
+      opacity: var(--hero-support-opacity);
+      transform: translateY(var(--hero-support-offset));
+      transition: none;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 34px;
+      opacity: var(--hero-support-opacity);
+      transform: translateY(var(--hero-support-offset));
+      transition: none;
+    }
+
+    .hero-action {
+      position: relative;
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      line-height: 1.4;
+      font-weight: 700;
+      color: var(--accent);
+      transition: opacity 180ms ease;
+    }
+
+    .hero-action::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+
+    .hero-action:hover {
+      opacity: 0.68;
+    }
+
+    .hero-action:hover::after {
+      transform: scaleX(1);
+    }
+
+    .hero-action-primary,
+    .hero-action-secondary,
+    .solutions-cta-link {
+      color: var(--cta-accent);
+    }
+
+    /* Ana içerik bölümleri */
+    main section {
+      padding: var(--section-spacing) 0;
+      border-top: 1px solid var(--line);
+    }
+
+    #why {
+      padding-top: clamp(28px, 4vw, 48px);
+    }
+
+    #solutions {
+      scroll-margin-top: 72px;
+    }
+
+    .section-label {
+      padding-top: 5px;
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 700;
+      color: var(--muted-soft);
+    }
+
+    /* Sticky label:
+       Why Patch ve Solutions etiketleri navbarın altında takip etsin. */
+    .section-label.is-sticky {
+      position: sticky;
+      top: calc(var(--topbar-offset-y) + 48px);
+      align-self: start;
+      color: var(--cta-accent);
+    }
+
+    .section-content {
+      max-width: 100%;
+    }
+
+    .lead,
+    .about-copy {
+      margin: 0;
+      max-width: var(--content-measure);
+      font-size: clamp(1.32rem, 1.9vw, 1.66rem);
+      line-height: 1.62;
+      color: var(--accent);
+    }
+
+    .about-copy + .about-copy {
+      margin-top: 24px;
+    }
+
+    .services-list,
+    .contact-list,
+    .use-cases {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-width: calc(var(--content-measure) + 36px);
+    }
+
+    .services-list li,
+    .contact-list li {
+      padding: 20px 0 22px;
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .services-list li:first-child,
+    .contact-list li:first-child {
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .service-title {
+      display: block;
+      margin-bottom: 14px;
+      font-size: 13px;
+      line-height: 1.5;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .service-copy,
+    .contact-copy,
+    .contact-intro {
+      margin: 0;
+      max-width: 580px;
+      font-size: clamp(1.05rem, 1.18vw, 1.14rem);
+      line-height: 1.78;
+      color: var(--muted);
+    }
+
+    .why-copy {
+      margin: 0;
+      max-width: 620px;
+      font-size: clamp(1.08rem, 1.22vw, 1.18rem);
+      line-height: 1.72;
+      color: rgba(17, 17, 17, 0.82);
+    }
+
+    .use-cases li {
+      padding: 17px 0 18px;
+      border-bottom: 1px solid var(--line-soft);
+      font-size: clamp(1rem, 1.05vw, 1.08rem);
+      line-height: 1.65;
+      color: var(--text);
+    }
+
+    /* Solutions / accordion alanı */
+    .solutions-list {
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+      max-width: 860px;
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .solution-item {
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .solution-trigger {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto auto;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      padding: 18px 0 20px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      text-align: left;
+      font: inherit;
+    }
+
+    .solution-title {
+      display: block;
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: clamp(1rem, 1.18vw, 1.12rem);
+      line-height: 1.5;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .solution-index {
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 11px;
+      line-height: 1.5;
+      color: var(--muted-soft);
+    }
+
+    .solution-state {
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 11px;
+      line-height: 1.5;
+      color: var(--muted-soft);
+      transition: transform 220ms ease, color 220ms ease;
+    }
+
+    /* Açılır içerik:
+       max-height geçişi kullanılıyor. İçerik ciddi biçimde uzarsa bu değer yeniden gözden geçirilmeli. */
+    .solution-description {
+      max-width: 620px;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-6px);
+      transition: max-height 220ms ease, opacity 180ms ease, transform 180ms ease, padding-bottom 220ms ease;
+      padding-bottom: 0;
+    }
+
+    .solution-item.is-open .solution-state {
+      transform: rotate(45deg);
+      color: var(--text);
+    }
+
+    .solution-item.is-open .solution-description {
+      max-height: 720px;
+      opacity: 1;
+      transform: translateY(0);
+      padding-bottom: 24px;
+    }
+
+    .solution-description > p,
+    .solution-meta-copy,
+    .solutions-cta-copy {
+      margin: 0;
+      font-size: clamp(1rem, 1.05vw, 1.08rem);
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .solution-description > p {
+      font-style: italic;
+    }
+
+    .solution-description > p + .solution-meta-list {
+      margin-top: 18px;
+    }
+
+    .solution-meta-list {
+      display: grid;
+      gap: 14px;
+      max-width: 620px;
+    }
+
+    .solution-meta {
+      display: grid;
+      gap: 4px;
+    }
+
+    .solution-meta-label {
+      display: inline-block;
+      position: relative;
+      padding-bottom: 6px;
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 900;
+      color: #6b3a3a;
+    }
+
+    .solution-meta-label::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: currentColor;
+      opacity: 0.45;
+    }
+
+    .solutions-cta {
+      margin-top: 28px;
+      padding-top: 22px;
+      max-width: 620px;
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .solutions-cta-link {
+      display: inline-flex;
+      margin-top: 12px;
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 700;
+      color: var(--cta-accent);
+    }
+
+    /* Contact alanı */
+    .contact-heading {
+      margin: 0;
+      font-size: clamp(1.3rem, 1.85vw, 1.72rem);
+      line-height: 1.4;
+      color: var(--text);
+    }
+
+    .contact-copy {
+      margin-top: 6px;
+    }
+
+    .contact-intro {
+      margin-top: 24px;
+      color: var(--text);
+    }
+
+    .solutions-intro {
+      white-space: nowrap;
+    }
+
+    .contact-list {
+      margin-top: 32px;
+    }
+
+    .contact-list strong {
+      display: block;
+      margin-bottom: 7px;
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      line-height: 1.4;
+      color: var(--muted-soft);
+    }
+
+    .contact-list a {
+      display: inline-block;
+      font-size: clamp(1.1rem, 1.3vw, 1.2rem);
+      line-height: 1.45;
+      color: var(--text);
+      transition: color 180ms ease, opacity 180ms ease;
+    }
+
+    .contact-list .inline-link:hover {
+      color: var(--cta-accent);
+      opacity: 1;
+    }
+
+
+    /* Footer */
+    .site-footer {
+      padding: 26px 0 40px;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-grid {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 11px;
+      line-height: 1.5;
+      color: var(--muted-soft);
+    }
+
+    /* Scroll ile görünür olan bloklar */
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 650ms ease, transform 650ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Erişilebilirlik: hareket azaltma tercihi */
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .topbar,
+      .topbar-text {
+        transition: none;
+      }
+
+      .reveal,
+      .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+
+    /* Tablet ve altı */
+    @media (max-width: 900px) {
+      .section-layout {
+        grid-template-columns: 1fr;
+        row-gap: 14px;
+      }
+
+      .hero {
+        padding-top: 98px;
+        padding-bottom: 88px;
+      }
+
+      .hero-layout {
+        padding-top: 36px;
+        min-height: clamp(300px, 56vh, 520px);
+      }
+
+      .section-label.is-sticky {
+        position: static;
+      }
+    }
+
+    /* Mobil */
+    @media (max-width: 640px) {
+      :root {
+        --page-padding-x: 16px;
+      }
+
+      .content-shell {
+        width: min(calc(100% - 32px), var(--container-width));
+      }
+
+      .hero-container {
+        width: min(calc(100% - 32px), var(--hero-container-width));
+      }
+
+      .footer-grid {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .topbar {
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-areas:
+          "phone lang"
+          "brand brand";
+        align-items: start;
+        justify-items: start;
+        gap: 8px 14px;
+        width: calc(100% - 32px);
+        left: 16px;
+        transform: none;
+        top: 12px;
+      }
+
+      .topbar .topbar-text {
+        white-space: normal;
+        line-height: 1.24;
+      }
+
+      .topbar .topbar-phone {
+        grid-area: phone;
+        font-size: calc(var(--topbar-text-size) + 1px);
+      }
+
+      .topbar .topbar-text:first-child,
+      .topbar .topbar-text:last-child {
+        justify-self: start;
+        text-align: left;
+      }
+
+      .topbar .topbar-text:nth-child(2) {
+        grid-area: lang;
+        justify-self: end;
+        text-align: right;
+      }
+
+      .topbar .topbar-text:last-child {
+        grid-area: brand;
+      }
+
+      .topbar .topbar-text:last-child {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 138px;
+        padding-bottom: 56px;
+      }
+
+      .hero-layout {
+        padding-top: 12px;
+        min-height: clamp(220px, 42vh, 340px);
+      }
+
+      .hero-wordmark-main {
+        font-size: clamp(3.6rem, 18vw, 4.8rem);
+        letter-spacing: 0.045em;
+      }
+
+      .hero-wordmark-sub {
+        font-size: clamp(1.7rem, 8vw, 2.1rem);
+      }
+
+      .hero-tagline {
+        margin-top: 14px;
+        font-size: 0.92rem;
+      }
+
+      .hero-summary {
+        font-size: 0.98rem;
+      }
+
+      .hero-actions {
+        gap: 14px 18px;
+        margin-top: 26px;
+      }
+
+      main section {
+        padding: 62px 0;
+      }
+
+      .lead,
+      .about-copy,
+      .why-copy,
+      .service-copy,
+      .contact-copy,
+      .contact-intro,
+      .use-cases li {
+        line-height: 1.66;
+      }
+
+      .solution-trigger {
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-areas:
+          "title state"
+          "index state";
+        align-items: start;
+        column-gap: 12px;
+        row-gap: 4px;
+        padding: 16px 0 18px;
+      }
+
+      .solution-title {
+        grid-area: title;
+      }
+
+      .solution-index {
+        grid-area: index;
+      }
+
+      .solution-state {
+        grid-area: state;
+        align-self: center;
+      }
+
+      .solution-item.is-open .solution-description {
+        max-height: 900px;
+      }
+
+      .solutions-intro {
+        white-space: normal;
+      }
+
+      .site-footer {
+        padding: 22px 0 30px;
+      }
+    }
+    /* About bölümü */
+    .about-profile {
+      display: grid;
+      gap: 20px;
+      max-width: var(--content-measure);
+    }
+
+    .about-name {
+      margin: 0 0 4px;
+      font-size: clamp(1.3rem, 1.85vw, 1.72rem);
+      line-height: 1.4;
+      color: var(--text);
+    }
+
+    .about-role {
+      margin: 0 0 20px;
+      font-size: clamp(1.05rem, 1.18vw, 1.14rem);
+      line-height: 1.78;
+      color: var(--muted-soft);
+    }
+
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="topbar">
+      <a class="topbar-text topbar-phone inline-link" href="tel:+905541561401">+90 554 156 14 01</a>
+      <a class="topbar-text inline-link" href="./index-tr.html">TR</a>
+      <a class="topbar-text inline-link" href="#contact">Patch Automation</a>
+    </div>
+
+    <div class="hero-container reveal">
+      <div class="hero-layout">
+        <div class="hero-content">
+          <h1 class="hero-wordmark">
+            <span class="hero-wordmark-main">Patch</span>
+            <span class="hero-wordmark-stack">
+              <span class="hero-wordmark-sub">Automation</span>
+            </span>
+          </h1>
+          <p class="hero-tagline">One Patch for all</p>
+          <div class="hero-actions">
+            <a class="hero-action hero-action-primary" href="#solutions">View Solutions</a>
+            <a class="hero-action hero-action-secondary" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content-shell">
+    <section id="why" class="reveal">
+      <div class="section-layout">
+        <div class="section-label is-sticky">Why Patch</div>
+        <div class="section-content">
+          <p class="why-copy">Lack of system integration within businesses leads to fragmented processes, data loss, and increased manual workload.</p>
+          <p class="why-copy" style="margin-top: 28px;">Patch restructures this fragmented environment through systems tailored to each business. It integrates processes, minimizes repetitive manual tasks, and eliminates them entirely where applicable.</p>
+          <p class="why-copy" style="margin-top: 28px;">This approach enhances operational efficiency while ensuring long-term process sustainability.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions" class="reveal">
+      <div class="section-layout">
+        <div class="section-label is-sticky">Solutions</div>
+        <div class="section-content">
+          <p class="contact-intro solutions-intro">Explore the system fit first, then we can shape the right implementation together.</p>
+          <ul class="solutions-list">
+            <li class="solution-item is-open">
+              <button class="solution-trigger" type="button" aria-expanded="true" aria-controls="solution-panel-01" id="solution-trigger-01">
+                <span class="solution-title">Customizable AI Solutions</span>
+                <span class="solution-index">01</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-01" role="region" aria-labelledby="solution-trigger-01">
+                <p>AI supported systems shaped around your business model, team structure, and operational reality. These solutions are not locked into a single template; the goal is to close the points in your workflow where time is lost and growth slows down.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Best For</span>
+                    <p class="solution-meta-copy">Teams that need more than an off-the-shelf tool and want AI or automation designed around their own processes.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Typical Flow</span>
+                    <p class="solution-meta-copy">Process review, bottleneck mapping, AI layer selection, tool integrations, and workflow design embedded into daily operations.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-02" id="solution-trigger-02">
+                <span class="solution-title">Voice Receptionists</span>
+                <span class="solution-index">02</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-02" role="region" aria-labelledby="solution-trigger-02">
+                <p>AI supported voice handling flows for incoming calls, qualification, routing, and first-response communication.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Best For</span>
+                    <p class="solution-meta-copy">Teams that miss calls, repeat the same first questions, or need 24/7 intake coverage.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Typical Flow</span>
+                    <p class="solution-meta-copy">Incoming call, caller intent detection, lead qualification, routing to the right person, and CRM logging.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-03" id="solution-trigger-03">
+                <span class="solution-title">Appointment Systems</span>
+                <span class="solution-index">03</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-03" role="region" aria-labelledby="solution-trigger-03">
+                <p>Automated scheduling structures that manage availability, booking updates, reminders, and customer coordination.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Best For</span>
+                    <p class="solution-meta-copy">Clinics, consultants, agencies, and service teams with repetitive booking coordination.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Typical Flow</span>
+                    <p class="solution-meta-copy">Availability sync, booking confirmation, reminder sequence, reschedule handling, and calendar updates.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-04" id="solution-trigger-04">
+                <span class="solution-title">RAG Agents</span>
+                <span class="solution-index">04</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-04" role="region" aria-labelledby="solution-trigger-04">
+                <p>Retrieval based AI systems that answer from your own documents, internal knowledge, and operational data sources.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Best For</span>
+                    <p class="solution-meta-copy">Businesses with large internal documentation, SOPs, catalogs, or support knowledge spread across files.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Typical Flow</span>
+                    <p class="solution-meta-copy">Question intake, source retrieval, grounded answer generation, and optional handoff to a team member.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-05" id="solution-trigger-05">
+                <span class="solution-title">Visual Generation Automations</span>
+                <span class="solution-index">05</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-05" role="region" aria-labelledby="solution-trigger-05">
+                <p>Automated image generation pipelines for branded assets, campaign visuals, and repeatable content production tasks.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Best For</span>
+                    <p class="solution-meta-copy">Brands and teams producing frequent campaign assets, product visuals, or social first image sets.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Typical Flow</span>
+                    <p class="solution-meta-copy">Prompt template setup, asset generation, approval filtering, file delivery, and publishing-ready output.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-06" id="solution-trigger-06">
+                <span class="solution-title">Social Media Automations</span>
+                <span class="solution-index">06</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-06" role="region" aria-labelledby="solution-trigger-06">
+                <p>Systems that organize publishing, content flow, approvals, and cross-platform posting with less manual effort.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Best For</span>
+                    <p class="solution-meta-copy">Small teams handling content manually across multiple channels and approval steps.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Typical Flow</span>
+                    <p class="solution-meta-copy">Content intake, review queue, scheduling logic, multi-platform publishing, and status reporting.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-07" id="solution-trigger-07">
+                <span class="solution-title">Web Design</span>
+                <span class="solution-index">07</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-07" role="region" aria-labelledby="solution-trigger-07">
+                <p>Web experiences designed to match your brand, communicate clearly, and support the automation systems behind your business.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Best For</span>
+                    <p class="solution-meta-copy">Businesses that need a cleaner digital front door tied directly to lead capture or service workflows.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Typical Flow</span>
+                    <p class="solution-meta-copy">Positioning, conversion-focused page design, form or booking integration, and automation-ready handoff.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-08" id="solution-trigger-08">
+                <span class="solution-title">Chatbots</span>
+                <span class="solution-index">08</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-08" role="region" aria-labelledby="solution-trigger-08">
+                <p>Conversational systems for lead capture, support handling, FAQs, and process guidance across customer touchpoints.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Best For</span>
+                    <p class="solution-meta-copy">Websites or internal teams that handle repeated customer questions and first-line support volume.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Typical Flow</span>
+                    <p class="solution-meta-copy">User question, guided response path, data capture, escalation when needed, and transcript logging.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-09" id="solution-trigger-09">
+                <span class="solution-title">Finance & Collection Automations</span>
+                <span class="solution-index">09</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-09" role="region" aria-labelledby="solution-trigger-09">
+                <p>Automated flows for payment reminders, invoice notifications, and follow-up on overdue balances without adding manual finance workload.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Best For</span>
+                    <p class="solution-meta-copy">Businesses that want more consistent collection follow-up and fewer manual reminder tasks.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Typical Flow</span>
+                    <p class="solution-meta-copy">Invoice issued, reminder schedule triggered, overdue follow-up sequence started, and payment status updated.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-10" id="solution-trigger-10">
+                <span class="solution-title">Review & Feedback Automations</span>
+                <span class="solution-index">10</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-10" role="region" aria-labelledby="solution-trigger-10">
+                <p>Post-service systems that collect satisfaction feedback, request reviews, and route negative responses directly to your internal team.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Best For</span>
+                    <p class="solution-meta-copy">Service businesses that want stronger review generation and faster handling of unhappy customers.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Typical Flow</span>
+                    <p class="solution-meta-copy">Service completed, feedback request sent, positive users nudged toward a public review, and negative feedback escalated internally.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="solutions-cta">
+            <p class="solutions-cta-copy">If one of these systems feels close to your workflow, we can define the right version around your actual business constraints.</p>
+            <a class="solutions-cta-link inline-link" href="#contact">Discuss Your Workflow</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <div class="section-layout">
+        <div class="section-label is-sticky">How It Works</div>
+        <div class="section-content">
+          <ul class="services-list">
+            <li>
+              <span class="service-title" style="color: var(--cta-accent);">01</span>
+              <p class="service-copy"><strong>We analyze your operations.</strong><br>Through an initial 30 minute consultation, we gain a clear understanding of how your business operates, including your data, team, and processes. Since each system is tailored to your organization and must align with your existing workflows, a thorough evaluation is essential.</p>
+            </li>
+            <li>
+              <span class="service-title" style="color: var(--cta-accent);">02</span>
+              <p class="service-copy"><strong>We assess compatibility.</strong><br>Not every workflow is suitable for automation. Transparency and honesty are core principles in how we work. We determine and clearly communicate whether a solution can be effectively integrated into your way of operating.</p>
+            </li>
+            <li>
+              <span class="service-title" style="color: var(--cta-accent);">03</span>
+              <p class="service-copy"><strong>If aligned, we plan and build together.</strong><br>We define the implementation plan in detail and design a system tailored specifically to your business. The solution is then carefully developed and deployed into your operations.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <div class="section-layout">
+        <div class="section-label" style="color: var(--cta-accent);">Contact</div>
+        <div class="section-content">
+          <h2 class="contact-heading">Start a conversation.</h2>
+          <ul class="contact-list">
+            <li>
+              <strong>Phone</strong>
+              <a class="inline-link" href="tel:+905541561401">+90 554 156 14 01</a>
+            </li>
+            <li>
+              <strong>Mail</strong>
+              <a class="inline-link" href="mailto:efe@patchtr.com">efe@patchtr.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="content-shell footer-grid">
+      <span>© 2026 Patch Automation. All rights reserved.</span>
+      <a class="inline-link" href="https://www.linkedin.com/in/efemuhsinpat" target="_blank" rel="noopener noreferrer" style="font-size:11px;color:var(--muted-soft);">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    // Sayfada scroll ile görünür olacak bloklar ve accordion tetikleyicileri.
+    const revealElements = document.querySelectorAll(".reveal");
+    const documentRoot = document.documentElement;
+    const solutionTriggers = document.querySelectorAll(".solution-trigger");
+    const solutionsJumpLinks = document.querySelectorAll('a[href="#solutions"]');
+
+    // Küçük yardımcı fonksiyonlar.
+    const clampValue = (value, min, max) => Math.min(Math.max(value, min), max);
+    const easeOutCubic = (value) => 1 - Math.pow(1 - value, 3);
+
+    // Hero ve topbar motion sistemi:
+    // Scroll ilerledikçe hero küçülür, üst bar sıkışır ve alt destek elemanları görünür olur.
+    // Buradaki CSS variable'lar hem görsel yoğunluğu hem de layout yüksekliğini etkiler.
+    const updateTopbarMotion = () => {
+      const scrollProgress = clampValue(window.scrollY / 220, 0, 1);
+      const easedProgress = easeOutCubic(scrollProgress);
+      const nextSectionPeek = 84;
+      const heroShellMinHeightStart = Math.max(window.innerHeight - nextSectionPeek, 0);
+      const heroShellMinHeightEnd = 0;
+      const heroShellMinHeightCurrent = heroShellMinHeightStart - ((heroShellMinHeightStart - heroShellMinHeightEnd) * easedProgress);
+      const heroMinHeightStart = Math.max(window.innerHeight - 168 - nextSectionPeek, 320);
+      const heroMinHeightEnd = Math.max(window.innerHeight * 0.12, 72);
+      const heroMinHeightCurrent = heroMinHeightStart - ((heroMinHeightStart - heroMinHeightEnd) * easedProgress);
+      const heroBottomPaddingStart = Math.min(Math.max(window.innerHeight * 0.14, 88), 132);
+      const heroBottomPaddingEnd = 0;
+      const heroBottomPaddingCurrent = heroBottomPaddingStart - ((heroBottomPaddingStart - heroBottomPaddingEnd) * easedProgress);
+
+      documentRoot.style.setProperty("--hero-main-scale", `${1.28 - (0.28 * easedProgress)}`);
+      documentRoot.style.setProperty("--hero-sub-opacity", `1`);
+      documentRoot.style.setProperty("--hero-sub-offset", `0px`);
+      documentRoot.style.setProperty("--hero-sub-margin-top", `8px`);
+      documentRoot.style.setProperty("--hero-sub-gap", `1px`);
+      documentRoot.style.setProperty("--hero-support-opacity", `1`);
+      documentRoot.style.setProperty("--hero-support-offset", `0px`);
+      documentRoot.style.setProperty("--hero-content-shift", `${0 - (42 * easedProgress)}px`);
+      documentRoot.style.setProperty("--hero-shell-min-height", `${heroShellMinHeightCurrent}px`);
+      documentRoot.style.setProperty("--hero-layout-min-height", `${heroMinHeightCurrent}px`);
+      documentRoot.style.setProperty("--hero-spacing-bottom-current", `${heroBottomPaddingCurrent}px`);
+      documentRoot.style.setProperty("--topbar-offset-y", `${12 - (4 * easedProgress)}px`);
+      documentRoot.style.setProperty("--topbar-padding-factor", `${1.4 + (0.5 * easedProgress)}`);
+      documentRoot.style.setProperty("--topbar-text-size", `${15.5 - (3 * easedProgress)}px`);
+      documentRoot.style.setProperty("--topbar-letter-spacing", `${0.04 - (0.008 * easedProgress)}em`);
+      documentRoot.style.setProperty("--topbar-text-color", `rgb(${Math.round(76 + ((114 - 76) * easedProgress))} ${Math.round(70 + ((114 - 70) * easedProgress))} ${Math.round(63 + ((107 - 63) * easedProgress))})`);
+      documentRoot.style.setProperty("--topbar-text-opacity", `${1 - (0.2 * easedProgress)}`);
+      documentRoot.style.setProperty("--topbar-text-scale", `${1 - (0.08 * easedProgress)}`);
+    };
+
+    // Scroll event'ini her seferinde doğrudan çalıştırmak yerine animation frame içine alıyoruz.
+    let topbarAnimationFrame = null;
+
+    const scheduleTopbarMotionUpdate = () => {
+      if (topbarAnimationFrame !== null) {
+        return;
+      }
+
+      topbarAnimationFrame = window.requestAnimationFrame(() => {
+        updateTopbarMotion();
+        topbarAnimationFrame = null;
+      });
+    };
+
+    const scrollToSolutionsSection = () => {
+      const solutionsSection = document.getElementById("solutions");
+
+      if (!solutionsSection) {
+        return;
+      }
+
+      const scrollOffset = window.innerWidth <= 640 ? 64 : 72;
+      const collapseThreshold = 220;
+
+      if (window.scrollY < collapseThreshold) {
+        window.scrollTo({ top: collapseThreshold, behavior: "auto" });
+        updateTopbarMotion();
+      }
+
+      window.requestAnimationFrame(() => {
+        const targetTop = solutionsSection.getBoundingClientRect().top + window.scrollY - scrollOffset;
+
+        window.scrollTo({
+          top: Math.max(targetTop, 0),
+          behavior: "smooth",
+        });
+
+        window.setTimeout(() => {
+          const correctedTop = solutionsSection.getBoundingClientRect().top + window.scrollY - scrollOffset;
+
+          window.scrollTo({
+            top: Math.max(correctedTop, 0),
+            behavior: "auto",
+          });
+        }, 260);
+      });
+    };
+
+    // İlk yükleme ve scroll takibi.
+    updateTopbarMotion();
+    window.addEventListener("scroll", scheduleTopbarMotionUpdate, { passive: true });
+
+    solutionsJumpLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        scrollToSolutionsSection();
+      });
+    });
+
+    // Solutions accordion:
+    // Aynı anda yalnızca bir madde açık kalır.
+    solutionTriggers.forEach((trigger) => {
+      trigger.addEventListener("click", () => {
+        const item = trigger.closest(".solution-item");
+        const isOpen = item?.classList.contains("is-open");
+
+        solutionTriggers.forEach((button) => {
+          const parentItem = button.closest(".solution-item");
+          button.setAttribute("aria-expanded", "false");
+          parentItem?.classList.remove("is-open");
+        });
+
+        if (!item || isOpen) {
+          return;
+        }
+
+        item.classList.add("is-open");
+        trigger.setAttribute("aria-expanded", "true");
+      });
+    });
+
+    // Reveal animasyonu:
+    // Bölümler viewport'a girdikçe tek sefer görünür oluyor.
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,
+      });
+
+      revealElements.forEach((element) => {
+        revealObserver.observe(element);
+      });
+    } else {
+      revealElements.forEach((element) => {
+        element.classList.add("is-visible");
+      });
+    }
+  </script>
+</body>
+</html>

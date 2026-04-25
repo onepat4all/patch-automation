@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patch Automation Modern İş Süreçleri için Özel Otomasyon Sistemleri</title>
+  <meta name="description"
+    content="Patch Automation, modern iş operasyonlarındaki boşlukları kapatan özel otomasyon sistemleri, backend iş akışları ve entegrasyonlar geliştirir. One Patch for all.">
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://www.patchtr.com/index-tr.html">
+  <link rel="alternate" hreflang="tr" href="https://www.patchtr.com/index-tr.html">
+  <link rel="alternate" hreflang="en" href="https://www.patchtr.com/">
+  <link rel="alternate" hreflang="x-default" href="https://www.patchtr.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.patchtr.com/index-tr.html">
+  <meta property="og:title" content="Patch Automation Modern İş Süreçleri için Özel Otomasyon Sistemleri">
+  <meta property="og:description"
+    content="Patch Automation, modern iş operasyonlarındaki boşlukları kapatan özel otomasyon sistemleri, backend iş akışları ve entegrasyonlar geliştirir.">
+  <meta property="og:image" content="https://www.patchtr.com/og-image.jpg">
+  <meta property="og:image:alt" content="Patch Automation marka önizleme görseli">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="Patch Automation">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Patch Automation Modern İş Süreçleri için Özel Otomasyon Sistemleri">
+  <meta name="twitter:description"
+    content="Özel otomasyon sistemleri, backend iş akışları ve entegrasyonlar ile modern iş operasyonlarındaki boşlukları kapatıyoruz.">
+  <meta name="twitter:image" content="https://www.patchtr.com/og-image.jpg">
+  <meta name="twitter:image:alt" content="Patch Automation marka önizleme görseli">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Patch Automation",
+    "url": "https://www.patchtr.com",
+    "inLanguage": "tr",
+    "description": "Modern iş operasyonları için özel otomasyon sistemleri, backend iş akışları ve entegrasyonlar.",
+    "founder": {
+      "@type": "Person",
+      "name": "Efe Muhsin Pat"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+90-554-156-14-01",
+      "email": "efe@patchtr.com",
+      "contactType": "customer service"
+    }
+  }
+  </script>
+
+  <link rel="icon" href="P.svg" type="image/svg+xml" sizes="any">
+  <link rel="shortcut icon" href="P.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English+SC&family=IM+Fell+French+Canon+SC&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Temel tema ve scroll animasyonunda JS tarafından güncellenen değişkenler */
+    :root {
+      --bg: #f5f5f2;
+      --text: #111111;
+      --muted: #595953;
+      --muted-soft: #72726b;
+      --line: rgba(0, 0, 0, 0.09);
+      --line-soft: rgba(0, 0, 0, 0.06);
+      --container-width: 1160px;
+      --hero-container-width: 1480px;
+      --topbar-width: 1720px;
+      --page-padding-x: clamp(24px, 4vw, 48px);
+      --section-label-width: clamp(200px, 20vw, 236px);
+      --section-gap: clamp(28px, 4vw, 56px);
+      --content-measure: 640px;
+      --hero-content-width: 680px;
+      --hero-spacing-top: clamp(40px, 7vw, 84px);
+      --hero-spacing-bottom: clamp(88px, 14vw, 132px);
+      --section-spacing: clamp(100px, 11vw, 136px);
+      --hero-main-scale: 1.28;
+      --hero-sub-opacity: 1;
+      --hero-sub-offset: 0px;
+      --hero-sub-margin-top: 8px;
+      --hero-sub-gap: 1px;
+      --hero-support-opacity: 1;
+      --hero-support-offset: 0px;
+      --hero-next-section-peek: 84px;
+      --hero-shell-min-height: calc(100svh - var(--hero-next-section-peek));
+      --hero-layout-min-height: calc(100svh - 168px - var(--hero-next-section-peek));
+      --hero-content-shift: 0px;
+      --hero-spacing-bottom-current: var(--hero-spacing-bottom);
+      --topbar-offset-y: 12px;
+      --topbar-padding-factor: 1.4;
+      --topbar-text-size: 15.5px;
+      --topbar-letter-spacing: 0.04em;
+      --topbar-text-color: #4c463f;
+      --topbar-text-opacity: 1;
+      --topbar-text-scale: 1;
+      --accent: #3a302d;
+      --cta-accent: #510101;
+      --accent-contrast: #f5f5f2;
+    }
+
+    /* Genel temel stiller */
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: clip;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "EB Garamond", "Times New Roman", serif;
+      font-weight: 400;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: clip;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a,
+    button {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a:focus,
+    button:focus {
+      outline: none;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 1px solid rgba(81, 1, 1, 0.28);
+      outline-offset: 3px;
+    }
+
+    ::selection {
+      background: rgba(17, 17, 17, 0.12);
+    }
+
+    /* Yerleşim kapsayıcıları */
+    .content-shell {
+      width: min(calc(100% - (var(--page-padding-x) * 2)), var(--container-width));
+      margin: 0 auto;
+    }
+
+    .hero-container {
+      width: min(calc(100% - (var(--page-padding-x) * 2)), var(--hero-container-width));
+      margin: 0 auto;
+    }
+
+    /* Ortak tipografi stilleri */
+    .topbar-text,
+    .section-label,
+    .service-title {
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .topbar-phone {
+      font-family: "IM Fell French Canon SC", "Times New Roman", serif;
+    }
+
+    .topbar .topbar-phone {
+      font-size: calc(var(--topbar-text-size) + 4px);
+    }
+
+    /* Hero alanı:
+       Aşağıdaki min-height ve padding değerleri scroll sırasında JS tarafından değiştirilir.
+       Bu değerleri değiştirirken topbar hizası ve first-fold davranışı da etkilenir. */
+    .hero {
+      min-height: var(--hero-shell-min-height);
+      padding: 112px 0 var(--hero-spacing-bottom-current);
+    }
+
+    /* Sabit üst bar */
+    .topbar {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      align-items: center;
+      gap: 16px;
+      min-height: 28px;
+      position: fixed;
+      top: var(--topbar-offset-y);
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(calc(100% - (var(--page-padding-x) * var(--topbar-padding-factor))), var(--topbar-width));
+      z-index: 30;
+    }
+
+    .topbar-text {
+      font-size: var(--topbar-text-size);
+      line-height: 1.45;
+      color: var(--topbar-text-color);
+      white-space: nowrap;
+      font-weight: 700;
+      transform-origin: center;
+      letter-spacing: var(--topbar-letter-spacing);
+      opacity: var(--topbar-text-opacity);
+      transform: scale(var(--topbar-text-scale));
+      transition: color 180ms ease, opacity 180ms ease, transform 180ms ease;
+    }
+
+    .topbar .topbar-text:first-child {
+      justify-self: start;
+      text-align: left;
+    }
+
+    .topbar .topbar-text:nth-child(2) {
+      justify-self: center;
+      text-align: center;
+      font-size: calc(var(--topbar-text-size) - 0.5px);
+    }
+
+    .topbar .topbar-text:last-child {
+      justify-self: end;
+      text-align: right;
+    }
+
+    .topbar .inline-link:hover {
+      opacity: 1;
+      color: var(--cta-accent);
+    }
+
+    .inline-link {
+      position: relative;
+      transition: opacity 180ms ease;
+    }
+
+    .inline-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+
+    .inline-link:hover {
+      opacity: 0.68;
+    }
+
+    .inline-link:hover::after {
+      transform: scaleX(1);
+    }
+
+
+    /* Section iskeleti:
+       Sol tarafta label, sağ tarafta içerik olacak şekilde iki kolonlu yapı. */
+    .section-layout {
+      display: grid;
+      grid-template-columns: var(--section-label-width) minmax(0, 1fr);
+      column-gap: var(--section-gap);
+      align-items: start;
+    }
+
+    /* Hero iç yerleşimi */
+    .hero-layout {
+      display: flex;
+      justify-content: center;
+      padding-top: var(--hero-spacing-top);
+      min-height: var(--hero-layout-min-height);
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: var(--hero-content-width);
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      transform: translateY(var(--hero-content-shift));
+      transition: transform 260ms ease;
+    }
+
+    .hero-wordmark {
+      margin: 0;
+      width: 100%;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .hero-wordmark-main,
+    .hero-wordmark-sub {
+      display: block;
+    }
+
+    .hero-wordmark-main {
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: clamp(4.5rem, 7vw, 5.5rem);
+      line-height: 0.92;
+      font-weight: 700;
+      transform: scale(var(--hero-main-scale));
+      transform-origin: center bottom;
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .hero-wordmark-stack {
+      margin-top: var(--hero-sub-margin-top);
+      display: grid;
+      gap: var(--hero-sub-gap);
+      width: 100%;
+      justify-items: center;
+      opacity: var(--hero-sub-opacity);
+      transform: translateY(var(--hero-sub-offset));
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .hero-wordmark-sub {
+      width: 100%;
+      text-align: center;
+      font-family: "EB Garamond", "Times New Roman", serif;
+      font-size: clamp(1.85rem, 2.8vw, 2.5rem);
+      line-height: 0.94;
+      font-weight: 400;
+      letter-spacing: 0;
+      color: var(--text);
+    }
+
+    .hero-summary {
+      margin: 22px 0 0;
+      max-width: 500px;
+      font-size: clamp(0.98rem, 1.18vw, 1.08rem);
+      line-height: 1.48;
+      color: var(--muted);
+      text-align: center;
+      opacity: var(--hero-support-opacity);
+      transform: translateY(var(--hero-support-offset));
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .hero-tagline {
+      margin: 18px 0 0;
+      font-size: clamp(1rem, 1.18vw, 1.08rem);
+      line-height: 1.48;
+      color: var(--muted-soft);
+      text-align: center;
+      font-style: italic;
+      opacity: var(--hero-support-opacity);
+      transform: translateY(var(--hero-support-offset));
+      transition: none;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 34px;
+      opacity: var(--hero-support-opacity);
+      transform: translateY(var(--hero-support-offset));
+      transition: none;
+    }
+
+    .hero-action {
+      position: relative;
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      line-height: 1.4;
+      font-weight: 700;
+      color: var(--accent);
+      transition: opacity 180ms ease;
+    }
+
+    .hero-action::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+
+    .hero-action:hover {
+      opacity: 0.68;
+    }
+
+    .hero-action:hover::after {
+      transform: scaleX(1);
+    }
+
+    .hero-action-primary,
+    .hero-action-secondary,
+    .solutions-cta-link {
+      color: var(--cta-accent);
+    }
+
+    /* Ana içerik bölümleri */
+    main section {
+      padding: var(--section-spacing) 0;
+      border-top: 1px solid var(--line);
+    }
+
+    #why {
+      padding-top: clamp(28px, 4vw, 48px);
+    }
+
+    #solutions {
+      scroll-margin-top: 72px;
+    }
+
+    .section-label {
+      padding-top: 5px;
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 700;
+      color: var(--muted-soft);
+    }
+
+    /* Sticky label:
+       Neden Patch ve Çözümler etiketleri navbarın altında takip etsin. */
+    .section-label.is-sticky {
+      position: sticky;
+      top: calc(var(--topbar-offset-y) + 48px);
+      align-self: start;
+      color: var(--cta-accent);
+    }
+
+    .section-content {
+      max-width: 100%;
+    }
+
+    .lead,
+    .about-copy {
+      margin: 0;
+      max-width: var(--content-measure);
+      font-size: clamp(1.32rem, 1.9vw, 1.66rem);
+      line-height: 1.62;
+      color: var(--accent);
+    }
+
+    .about-copy+.about-copy {
+      margin-top: 24px;
+    }
+
+    .services-list,
+    .contact-list,
+    .use-cases {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-width: calc(var(--content-measure) + 36px);
+    }
+
+    .services-list li,
+    .contact-list li {
+      padding: 20px 0 22px;
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .services-list li:first-child,
+    .contact-list li:first-child {
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .service-title {
+      display: block;
+      margin-bottom: 14px;
+      font-size: 13px;
+      line-height: 1.5;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .service-copy,
+    .contact-copy,
+    .contact-intro {
+      margin: 0;
+      max-width: 580px;
+      font-size: clamp(1.05rem, 1.18vw, 1.14rem);
+      line-height: 1.78;
+      color: var(--muted);
+    }
+
+    .why-copy {
+      margin: 0;
+      max-width: 620px;
+      font-size: clamp(1.08rem, 1.22vw, 1.18rem);
+      line-height: 1.72;
+      color: rgba(17, 17, 17, 0.82);
+    }
+
+    .use-cases li {
+      padding: 17px 0 18px;
+      border-bottom: 1px solid var(--line-soft);
+      font-size: clamp(1rem, 1.05vw, 1.08rem);
+      line-height: 1.65;
+      color: var(--text);
+    }
+
+    /* Solutions / accordion alanı */
+    .solutions-list {
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+      max-width: 860px;
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .solution-item {
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .solution-trigger {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto auto;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      padding: 18px 0 20px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      text-align: left;
+      font: inherit;
+    }
+
+    .solution-title {
+      display: block;
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: clamp(1rem, 1.18vw, 1.12rem);
+      line-height: 1.5;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .solution-index {
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 11px;
+      line-height: 1.5;
+      color: var(--muted-soft);
+    }
+
+    .solution-state {
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 11px;
+      line-height: 1.5;
+      color: var(--muted-soft);
+      transition: transform 220ms ease, color 220ms ease;
+    }
+
+    /* Açılır içerik:
+       max-height geçişi kullanılıyor. İçerik ciddi biçimde uzarsa bu değer yeniden gözden geçirilmeli. */
+    .solution-description {
+      max-width: 620px;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-6px);
+      transition: max-height 220ms ease, opacity 180ms ease, transform 180ms ease, padding-bottom 220ms ease;
+      padding-bottom: 0;
+    }
+
+    .solution-item.is-open .solution-state {
+      transform: rotate(45deg);
+      color: var(--text);
+    }
+
+    .solution-item.is-open .solution-description {
+      max-height: 720px;
+      opacity: 1;
+      transform: translateY(0);
+      padding-bottom: 24px;
+    }
+
+    .solution-description>p,
+    .solution-meta-copy,
+    .solutions-cta-copy {
+      margin: 0;
+      font-size: clamp(1rem, 1.05vw, 1.08rem);
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .solution-description>p {
+      font-style: italic;
+    }
+
+    .solution-description>p+.solution-meta-list {
+      margin-top: 18px;
+    }
+
+    .solution-meta-list {
+      display: grid;
+      gap: 14px;
+      max-width: 620px;
+    }
+
+    .solution-meta {
+      display: grid;
+      gap: 4px;
+    }
+
+    .solution-meta-label {
+      display: inline-block;
+      position: relative;
+      padding-bottom: 6px;
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 900;
+      color: #6b3a3a;
+    }
+
+    .solution-meta-label::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: currentColor;
+      opacity: 0.45;
+    }
+
+    .solutions-cta {
+      margin-top: 28px;
+      padding-top: 22px;
+      max-width: 620px;
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .solutions-cta-link {
+      display: inline-flex;
+      margin-top: 12px;
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 700;
+      color: var(--cta-accent);
+    }
+
+    /* İletişim alanı */
+    .contact-heading {
+      margin: 0;
+      font-size: clamp(1.3rem, 1.85vw, 1.72rem);
+      line-height: 1.4;
+      color: var(--text);
+    }
+
+    .contact-copy {
+      margin-top: 6px;
+    }
+
+    .contact-intro {
+      margin-top: 24px;
+      color: var(--text);
+    }
+
+    .solutions-intro {
+      white-space: nowrap;
+    }
+
+    .contact-list {
+      margin-top: 32px;
+    }
+
+    .contact-list strong {
+      display: block;
+      margin-bottom: 7px;
+      font-family: "Cinzel", "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      line-height: 1.4;
+      color: var(--muted-soft);
+    }
+
+    .contact-list a {
+      display: inline-block;
+      font-size: clamp(1.1rem, 1.3vw, 1.2rem);
+      line-height: 1.45;
+      color: var(--text);
+      transition: color 180ms ease, opacity 180ms ease;
+    }
+
+    .contact-list .inline-link:hover {
+      color: var(--cta-accent);
+      opacity: 1;
+    }
+
+
+    /* Footer */
+    .site-footer {
+      padding: 26px 0 40px;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-grid {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 11px;
+      line-height: 1.5;
+      color: var(--muted-soft);
+    }
+
+    /* Scroll ile görünür olan bloklar */
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 650ms ease, transform 650ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Erişilebilirlik: hareket azaltma tercihi */
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .topbar,
+      .topbar-text {
+        transition: none;
+      }
+
+      .reveal,
+      .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+
+    /* Tablet ve altı */
+    @media (max-width: 900px) {
+      .section-layout {
+        grid-template-columns: 1fr;
+        row-gap: 14px;
+      }
+
+      .hero {
+        padding-top: 98px;
+        padding-bottom: 88px;
+      }
+
+      .hero-layout {
+        padding-top: 36px;
+        min-height: clamp(300px, 56vh, 520px);
+      }
+
+      .section-label.is-sticky {
+        position: static;
+      }
+    }
+
+    /* Mobil */
+    @media (max-width: 640px) {
+      :root {
+        --page-padding-x: 16px;
+      }
+
+      .content-shell {
+        width: min(calc(100% - 32px), var(--container-width));
+      }
+
+      .hero-container {
+        width: min(calc(100% - 32px), var(--hero-container-width));
+      }
+
+      .footer-grid {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .topbar {
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-areas:
+          "phone lang"
+          "brand brand";
+        align-items: start;
+        justify-items: start;
+        gap: 8px 14px;
+        width: calc(100% - 32px);
+        left: 16px;
+        transform: none;
+        top: 12px;
+      }
+
+      .topbar .topbar-text {
+        white-space: normal;
+        line-height: 1.24;
+      }
+
+      .topbar .topbar-phone {
+        grid-area: phone;
+        font-size: calc(var(--topbar-text-size) + 1px);
+      }
+
+      .topbar .topbar-text:first-child,
+      .topbar .topbar-text:last-child {
+        justify-self: start;
+        text-align: left;
+      }
+
+      .topbar .topbar-text:nth-child(2) {
+        grid-area: lang;
+        justify-self: end;
+        text-align: right;
+      }
+
+      .topbar .topbar-text:last-child {
+        grid-area: brand;
+      }
+
+      .topbar .topbar-text:last-child {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 138px;
+        padding-bottom: 56px;
+      }
+
+      .hero-layout {
+        padding-top: 12px;
+        min-height: clamp(220px, 42vh, 340px);
+      }
+
+      .hero-wordmark-main {
+        font-size: clamp(3.6rem, 18vw, 4.8rem);
+        letter-spacing: 0.045em;
+      }
+
+      .hero-wordmark-sub {
+        font-size: clamp(1.7rem, 8vw, 2.1rem);
+      }
+
+      .hero-tagline {
+        margin-top: 14px;
+        font-size: 0.92rem;
+      }
+
+      .hero-summary {
+        font-size: 0.98rem;
+      }
+
+      .hero-actions {
+        gap: 14px 18px;
+        margin-top: 26px;
+      }
+
+      main section {
+        padding: 62px 0;
+      }
+
+      .lead,
+      .about-copy,
+      .why-copy,
+      .service-copy,
+      .contact-copy,
+      .contact-intro,
+      .use-cases li {
+        line-height: 1.66;
+      }
+
+      .solution-trigger {
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-areas:
+          "title state"
+          "index state";
+        align-items: start;
+        column-gap: 12px;
+        row-gap: 4px;
+        padding: 16px 0 18px;
+      }
+
+      .solution-title {
+        grid-area: title;
+      }
+
+      .solution-index {
+        grid-area: index;
+      }
+
+      .solution-state {
+        grid-area: state;
+        align-self: center;
+      }
+
+      .solution-item.is-open .solution-description {
+        max-height: 900px;
+      }
+
+      .solutions-intro {
+        white-space: normal;
+      }
+
+      .site-footer {
+        padding: 22px 0 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="topbar">
+      <a class="topbar-text topbar-phone inline-link" href="tel:+905541561401">+90 554 156 14 01</a>
+      <a class="topbar-text inline-link" href="./index.html">EN</a>
+      <a class="topbar-text inline-link" href="#contact">Patch Automation</a>
+    </div>
+
+    <div class="hero-container reveal">
+      <div class="hero-layout">
+        <div class="hero-content">
+          <h1 class="hero-wordmark">
+            <span class="hero-wordmark-main">Patch</span>
+            <span class="hero-wordmark-stack">
+              <span class="hero-wordmark-sub">Automation</span>
+            </span>
+          </h1>
+          <p class="hero-tagline">One Patch for all</p>
+          <div class="hero-actions">
+            <a class="hero-action hero-action-primary" href="#solutions">Çözümleri Gör</a>
+            <a class="hero-action hero-action-secondary" href="#contact">İletişime Geç</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content-shell">
+    <section id="why" class="reveal">
+      <div class="section-layout">
+        <div class="section-label is-sticky">Neden Patch?</div>
+        <div class="section-content">
+          <p class="why-copy">İşletmelerde sistemler arası entegrasyon eksikliği; süreçlerin bölünmesine, veri
+            kayıplarına ve yüksek manuel iş yüküne yol açmaktadır.</p>
+          <p class="why-copy" style="margin-top: 28px;">Patch, işletmeye özel geliştirilen sistemlerle bu yapıyı yeniden
+            kurgular. Süreçleri entegre eder, tekrarlayan manuel işlemleri minimize eder ve uygun senaryolarda tamamen
+            ortadan kaldırır.</p>
+          <p class="why-copy" style="margin-top: 28px;">Bu yaklaşım, operasyonel verimliliği artırırken süreçlerin
+            sürdürülebilirliğini sağlar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions" class="reveal">
+      <div class="section-layout">
+        <div class="section-label is-sticky">Çözümler</div>
+        <div class="section-content">
+          <p class="contact-intro solutions-intro">Önce hangi sistemin iş akışınıza uyduğunu görün, sonra doğru yapıyı
+            birlikte şekillendirelim.</p>
+          <ul class="solutions-list">
+            <li class="solution-item is-open">
+              <button class="solution-trigger" type="button" aria-expanded="true" aria-controls="solution-panel-01"
+                id="solution-trigger-01">
+                <span class="solution-title">Kişiselleştirilebilir AI Çözümleri</span>
+                <span class="solution-index">01</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-01" role="region"
+                aria-labelledby="solution-trigger-01">
+                <p>İş modelinize, ekip yapınıza ve operasyonel gerçekliğinize göre şekillenen AI destekli sistemler.
+                  Buradaki çözümler tek bir kalıba bağlı değil; hedef, iş akışınızda zaman kaybettiren veya büyümeyi
+                  yavaşlatan noktaları doğru otomasyon yapısıyla kapatmak.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Kimler İçin</span>
+                    <p class="solution-meta-copy">Hazır bir araçtan fazlasına ihtiyaç duyan, kendi süreçlerine göre
+                      şekillenen AI ve otomasyon kurguları isteyen ekipler.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Örnek Akış</span>
+                    <p class="solution-meta-copy">Süreç analizi, darboğazların tespiti, uygun AI katmanının seçimi, araç
+                      entegrasyonları ve gerçek operasyon içine yerleşen iş akışı tasarımı.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-02"
+                id="solution-trigger-02">
+                <span class="solution-title">Sesli Sekreterler</span>
+                <span class="solution-index">02</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-02" role="region"
+                aria-labelledby="solution-trigger-02">
+                <p>Gelen çağrılar için AI destekli karşılama, ön değerlendirme, yönlendirme ve ilk yanıt süreçlerini
+                  yöneten akışlar.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Kimler İçin</span>
+                    <p class="solution-meta-copy">Çağrı kaçıran, ilk görüşmeleri tekrar tekrar manuel yöneten veya 7/24
+                      karşılamaya ihtiyaç duyan ekipler.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Örnek Akış</span>
+                    <p class="solution-meta-copy">Çağrının karşılanması, ihtiyacın anlaşılması, potansiyel müşteri ön
+                      değerlendirmesi, doğru kişiye yönlendirme ve CRM kaydı.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-03"
+                id="solution-trigger-03">
+                <span class="solution-title">Randevu Sistemleri</span>
+                <span class="solution-index">03</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-03" role="region"
+                aria-labelledby="solution-trigger-03">
+                <p>Müsaitlik yönetimi, rezervasyon güncellemeleri, hatırlatmalar ve müşteri koordinasyonunu otomatik
+                  olarak yöneten sistemler.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Kimler İçin</span>
+                    <p class="solution-meta-copy">Klinikler, danışmanlar, ajanslar ve sürekli randevu koordinasyonu
+                      yapan hizmet ekipleri.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Örnek Akış</span>
+                    <p class="solution-meta-copy">Takvim senkronizasyonu, rezervasyon onayı, hatırlatma mesajları,
+                      yeniden planlama ve takvim güncellemesi.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-04"
+                id="solution-trigger-04">
+                <span class="solution-title">RAG Ajanları</span>
+                <span class="solution-index">04</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-04" role="region"
+                aria-labelledby="solution-trigger-04">
+                <p>Kendi dokümanlarınız, iş verileriniz ve operasyonel kaynaklarınızdan yanıt üreten retrieval tabanlı
+                  AI sistemleri.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Kimler İçin</span>
+                    <p class="solution-meta-copy">Bilgisi farklı dokümanlara, SOP'lere, kataloglara veya destek
+                      kaynaklarına dağılmış işletmeler.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Örnek Akış</span>
+                    <p class="solution-meta-copy">Sorunun alınması, kaynakların taranması, dayanaklı yanıt üretimi ve
+                      gerekirse ekibe yönlendirme.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-05"
+                id="solution-trigger-05">
+                <span class="solution-title">Görsel Üretim Otomasyonları</span>
+                <span class="solution-index">05</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-05" role="region"
+                aria-labelledby="solution-trigger-05">
+                <p>Marka varlıkları, kampanya görselleri ve tekrar eden içerik üretimi için otomatik görsel üretim
+                  akışları.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Kimler İçin</span>
+                    <p class="solution-meta-copy">Sık kampanya görseli, ürün görseli veya sosyal medya üretimi yapan
+                      marka ve ekipler.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Örnek Akış</span>
+                    <p class="solution-meta-copy">Komut şablonları, otomatik görsel üretimi, onay filtresi, dosya
+                      teslimi ve yayına hazır çıktı.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-06"
+                id="solution-trigger-06">
+                <span class="solution-title">Sosyal Medya Otomasyonları</span>
+                <span class="solution-index">06</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-06" role="region"
+                aria-labelledby="solution-trigger-06">
+                <p>Yayınlama, içerik akışı, onay süreçleri ve çoklu platform paylaşımını daha az manuel çabayla yöneten
+                  sistemler.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Kimler İçin</span>
+                    <p class="solution-meta-copy">Birden fazla kanalda içerik yöneten ve onay süreçlerini hâlâ manuel
+                      yürüten küçük ekipler.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Örnek Akış</span>
+                    <p class="solution-meta-copy">İçerik girişi, onay kuyruğu, zamanlama mantığı, çoklu platform yayını
+                      ve durum raporlaması.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-07"
+                id="solution-trigger-07">
+                <span class="solution-title">Web Tasarım</span>
+                <span class="solution-index">07</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-07" role="region"
+                aria-labelledby="solution-trigger-07">
+                <p>Markanıza uygun, net iletişim kuran ve arka plandaki otomasyon sistemlerini destekleyen web
+                  deneyimleri.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Kimler İçin</span>
+                    <p class="solution-meta-copy">Daha güçlü bir dijital vitrine ve lead toplama süreçleriyle bağlı bir
+                      web yapısına ihtiyaç duyan işletmeler.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Örnek Akış</span>
+                    <p class="solution-meta-copy">Konumlandırma, dönüşüm odaklı sayfa tasarımı, form veya randevu
+                      entegrasyonu ve otomasyon teslimi.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-08"
+                id="solution-trigger-08">
+                <span class="solution-title">Chatbotlar</span>
+                <span class="solution-index">08</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-08" role="region"
+                aria-labelledby="solution-trigger-08">
+                <p>Potansiyel müşteri toplama, destek süreçleri, SSS yanıtları ve kullanıcı yönlendirmeleri için konuşma
+                  tabanlı sistemler.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Kimler İçin</span>
+                    <p class="solution-meta-copy">Web sitesinde veya iş operasyonunda tekrar eden sorular ve ilk destek
+                      yükü olan ekipler.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Örnek Akış</span>
+                    <p class="solution-meta-copy">Kullanıcı sorusu, yönlendirilmiş yanıt yolu, veri toplama,
+                      gerektiğinde insan desteğine aktarım ve kayıt tutulması.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-09"
+                id="solution-trigger-09">
+                <span class="solution-title">Finans / Tahsilat Otomasyonları</span>
+                <span class="solution-index">09</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-09" role="region"
+                aria-labelledby="solution-trigger-09">
+                <p>Ödeme hatırlatma, fatura bilgilendirme ve geciken ödemeler için otomatik takip akışlarıyla finans
+                  süreçlerini daha az manuel yükle yöneten sistemler.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Kimler İçin</span>
+                    <p class="solution-meta-copy">Tahsilat takibini daha düzenli yürütmek ve manuel hatırlatma yükünü
+                      azaltmak isteyen işletmeler.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Örnek Akış</span>
+                    <p class="solution-meta-copy">Faturanın oluşturulması, hatırlatma planının devreye girmesi, gecikme
+                      takibinin başlaması ve ödeme durumunun güncellenmesi.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="solution-item">
+              <button class="solution-trigger" type="button" aria-expanded="false" aria-controls="solution-panel-10"
+                id="solution-trigger-10">
+                <span class="solution-title">Yorum ve Geri Bildirim Otomasyonları</span>
+                <span class="solution-index">10</span>
+                <span class="solution-state" aria-hidden="true">+</span>
+              </button>
+              <div class="solution-description" id="solution-panel-10" role="region"
+                aria-labelledby="solution-trigger-10">
+                <p>Hizmet sonrası memnuniyet toplama, yorum isteme ve olumsuz geri bildirimi doğrudan iç ekibe düşürme
+                  akışlarını yöneten sistemler.</p>
+                <div class="solution-meta-list">
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Kimler İçin</span>
+                    <p class="solution-meta-copy">Daha fazla yorum toplamak ve memnuniyetsiz müşterilere daha hızlı
+                      müdahale etmek isteyen hizmet işletmeleri.</p>
+                  </div>
+                  <div class="solution-meta">
+                    <span class="solution-meta-label">Örnek Akış</span>
+                    <p class="solution-meta-copy">Hizmetin tamamlanması, geri bildirim talebinin gönderilmesi, memnun
+                      kullanıcıdan yorum istenmesi ve olumsuz geri bildirimin iç ekibe aktarılması.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="solutions-cta">
+            <p class="solutions-cta-copy">Bu sistemlerden biri iş akışınıza yakın geliyorsa, doğru versiyonu gerçek
+              operasyonunuza göre birlikte tanımlayabiliriz.</p>
+            <a class="solutions-cta-link inline-link" href="#contact">İş Akışını Konuşalım</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <div class="section-layout">
+        <div class="section-label is-sticky">Nasıl Çalışıyoruz</div>
+        <div class="section-content">
+          <ul class="services-list">
+            <li>
+              <span class="service-title" style="color: var(--cta-accent);">01</span>
+              <p class="service-copy">Operasyonlarınızı öğreniyoruz. Ücretsiz 30 dakikalık bir görüşmeyle işinizin nasıl
+                yürüdüğünü anlıyoruz: verinizi, ekibinizi, süreçlerinizi. Otomasyonlar size özel kurulur, ekibinize ve
+                mevcut sisteminize uyum sağlar. Bu yüzden iyi bir değerlendirme süreci kaçınılmazdır.</p>
+            </li>
+            <li>
+              <span class="service-title" style="color: var(--cta-accent);">02</span>
+              <p class="service-copy">Uyumu değerlendiriyoruz. Her iş akışı otomasyona uygun değildir. İşimizi şeffaf ve
+                dürüst yürütmek temel prensibimizdir. Bu nedenle çalışma biçiminize gerçekten entegre olacak bir
+                otomasyon
+                kurup kurulamayacağını size bildiririz.
+              </p>
+            </li>
+            <li>
+              <span class="service-title" style="color: var(--cta-accent);">03</span>
+              <p class="service-copy">Eğer uyumluysa, planı detaylıca birlikte
+                belirliyoruz. İşletmenize özel otomasyonunuzu titizlikle tasarlıyor ve devreye
+                alıyoruz.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <div class="section-layout">
+        <div class="section-label" style="color: var(--cta-accent);">İletişim</div>
+        <div class="section-content">
+          <h2 class="contact-heading">İletişime geçin.</h2>
+          <ul class="contact-list">
+            <li>
+              <strong>Telefon</strong>
+              <a class="inline-link" href="tel:+905541561401">+90 554 156 14 01</a>
+            </li>
+            <li>
+              <strong>Mail</strong>
+              <a class="inline-link" href="mailto:efe@patchtr.com">efe@patchtr.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="content-shell footer-grid">
+      <span>© 2026 Patch Automation. Tüm hakları saklıdır.</span>
+      <a class="inline-link" href="https://www.linkedin.com/in/efemuhsinpat" target="_blank" rel="noopener noreferrer"
+        style="font-size:11px;color:var(--muted-soft);">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    // Sayfada scroll ile görünür olacak bloklar ve accordion tetikleyicileri.
+    const revealElements = document.querySelectorAll(".reveal");
+    const documentRoot = document.documentElement;
+    const solutionTriggers = document.querySelectorAll(".solution-trigger");
+    const solutionsJumpLinks = document.querySelectorAll('a[href="#solutions"]');
+
+    // Küçük yardımcı fonksiyonlar.
+    const clampValue = (value, min, max) => Math.min(Math.max(value, min), max);
+    const easeOutCubic = (value) => 1 - Math.pow(1 - value, 3);
+
+    // Hero ve topbar motion sistemi:
+    // Scroll ilerledikçe hero küçülür, üst bar sıkışır ve alt destek elemanları görünür olur.
+    // Buradaki CSS variable'lar hem görsel yoğunluğu hem de layout yüksekliğini etkiler.
+    const updateTopbarMotion = () => {
+      const scrollProgress = clampValue(window.scrollY / 220, 0, 1);
+      const easedProgress = easeOutCubic(scrollProgress);
+      const nextSectionPeek = 84;
+      const heroShellMinHeightStart = Math.max(window.innerHeight - nextSectionPeek, 0);
+      const heroShellMinHeightEnd = 0;
+      const heroShellMinHeightCurrent = heroShellMinHeightStart - ((heroShellMinHeightStart - heroShellMinHeightEnd) * easedProgress);
+      const heroMinHeightStart = Math.max(window.innerHeight - 168 - nextSectionPeek, 320);
+      const heroMinHeightEnd = Math.max(window.innerHeight * 0.12, 72);
+      const heroMinHeightCurrent = heroMinHeightStart - ((heroMinHeightStart - heroMinHeightEnd) * easedProgress);
+      const heroBottomPaddingStart = Math.min(Math.max(window.innerHeight * 0.14, 88), 132);
+      const heroBottomPaddingEnd = 0;
+      const heroBottomPaddingCurrent = heroBottomPaddingStart - ((heroBottomPaddingStart - heroBottomPaddingEnd) * easedProgress);
+
+      documentRoot.style.setProperty("--hero-main-scale", `${1.28 - (0.28 * easedProgress)}`);
+      documentRoot.style.setProperty("--hero-sub-opacity", `1`);
+      documentRoot.style.setProperty("--hero-sub-offset", `0px`);
+      documentRoot.style.setProperty("--hero-sub-margin-top", `8px`);
+      documentRoot.style.setProperty("--hero-sub-gap", `1px`);
+      documentRoot.style.setProperty("--hero-support-opacity", `1`);
+      documentRoot.style.setProperty("--hero-support-offset", `0px`);
+      documentRoot.style.setProperty("--hero-content-shift", `${0 - (42 * easedProgress)}px`);
+      documentRoot.style.setProperty("--hero-shell-min-height", `${heroShellMinHeightCurrent}px`);
+      documentRoot.style.setProperty("--hero-layout-min-height", `${heroMinHeightCurrent}px`);
+      documentRoot.style.setProperty("--hero-spacing-bottom-current", `${heroBottomPaddingCurrent}px`);
+      documentRoot.style.setProperty("--topbar-offset-y", `${12 - (4 * easedProgress)}px`);
+      documentRoot.style.setProperty("--topbar-padding-factor", `${1.4 + (0.5 * easedProgress)}`);
+      documentRoot.style.setProperty("--topbar-text-size", `${15.5 - (3 * easedProgress)}px`);
+      documentRoot.style.setProperty("--topbar-letter-spacing", `${0.04 - (0.008 * easedProgress)}em`);
+      documentRoot.style.setProperty("--topbar-text-color", `rgb(${Math.round(76 + ((114 - 76) * easedProgress))} ${Math.round(70 + ((114 - 70) * easedProgress))} ${Math.round(63 + ((107 - 63) * easedProgress))})`);
+      documentRoot.style.setProperty("--topbar-text-opacity", `${1 - (0.2 * easedProgress)}`);
+      documentRoot.style.setProperty("--topbar-text-scale", `${1 - (0.08 * easedProgress)}`);
+    };
+
+    // Scroll event'ini her seferinde doğrudan çalıştırmak yerine animation frame içine alıyoruz.
+    let topbarAnimationFrame = null;
+
+    const scheduleTopbarMotionUpdate = () => {
+      if (topbarAnimationFrame !== null) {
+        return;
+      }
+
+      topbarAnimationFrame = window.requestAnimationFrame(() => {
+        updateTopbarMotion();
+        topbarAnimationFrame = null;
+      });
+    };
+
+    const scrollToSolutionsSection = () => {
+      const solutionsSection = document.getElementById("solutions");
+
+      if (!solutionsSection) {
+        return;
+      }
+
+      const scrollOffset = window.innerWidth <= 640 ? 64 : 72;
+      const collapseThreshold = 220;
+
+      if (window.scrollY < collapseThreshold) {
+        window.scrollTo({ top: collapseThreshold, behavior: "auto" });
+        updateTopbarMotion();
+      }
+
+      window.requestAnimationFrame(() => {
+        const targetTop = solutionsSection.getBoundingClientRect().top + window.scrollY - scrollOffset;
+
+        window.scrollTo({
+          top: Math.max(targetTop, 0),
+          behavior: "smooth",
+        });
+
+        window.setTimeout(() => {
+          const correctedTop = solutionsSection.getBoundingClientRect().top + window.scrollY - scrollOffset;
+
+          window.scrollTo({
+            top: Math.max(correctedTop, 0),
+            behavior: "auto",
+          });
+        }, 260);
+      });
+    };
+
+    // İlk yükleme ve scroll takibi.
+    updateTopbarMotion();
+    window.addEventListener("scroll", scheduleTopbarMotionUpdate, { passive: true });
+
+    solutionsJumpLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        scrollToSolutionsSection();
+      });
+    });
+
+    // Solutions accordion:
+    // Aynı anda yalnızca bir madde açık kalır.
+    solutionTriggers.forEach((trigger) => {
+      trigger.addEventListener("click", () => {
+        const item = trigger.closest(".solution-item");
+        const isOpen = item?.classList.contains("is-open");
+
+        solutionTriggers.forEach((button) => {
+          const parentItem = button.closest(".solution-item");
+          button.setAttribute("aria-expanded", "false");
+          parentItem?.classList.remove("is-open");
+        });
+
+        if (!item || isOpen) {
+          return;
+        }
+
+        item.classList.add("is-open");
+        trigger.setAttribute("aria-expanded", "true");
+      });
+    });
+
+    // Reveal animasyonu:
+    // Bölümler viewport'a girdikçe tek sefer görünür oluyor.
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,
+      });
+
+      revealElements.forEach((element) => {
+        revealObserver.observe(element);
+      });
+    } else {
+      revealElements.forEach((element) => {
+        element.classList.add("is-visible");
+      });
+    }
+  </script>
+</body>
+
+</html>
