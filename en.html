@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patch Automation</title>
-  <meta name="description" content="Patch Automation builds custom automation systems, backend workflows, and integrations that close the gaps in modern business operations. One Patch for all.">
+  <title>Patch Automation | AI Automation Systems &amp; Business Workflows</title>
+  <meta name="description" content="Patch Automation builds custom AI automation systems, business workflows, backend integrations, and custom automation systems for companies that want to reduce manual work.">
 
   <!-- Canonical & hreflang -->
   <link rel="canonical" href="https://patchtr.com/en.html">
@@ -16,8 +16,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://patchtr.com/en.html">
-  <meta property="og:title" content="Patch Automation Custom Systems for Modern Business Workflows">
-  <meta property="og:description" content="Patch Automation builds custom automation systems, backend workflows, and integrations that close the gaps in modern business operations.">
+  <meta property="og:title" content="Patch Automation | AI Automation Systems &amp; Business Workflows">
+  <meta property="og:description" content="Patch Automation builds custom AI automation systems, business workflows, and backend integrations for modern companies.">
   <meta property="og:image" content="https://patchtr.com/og-image.jpg">
   <meta property="og:image:alt" content="Patch Automation brand preview image">
   <meta property="og:image:width" content="1200">
@@ -28,8 +28,8 @@
 
   <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Patch Automation Custom Systems for Modern Business Workflows">
-  <meta name="twitter:description" content="Custom automation systems, backend workflows and integrations that close the gaps in modern business operations.">
+  <meta name="twitter:title" content="Patch Automation | AI Automation Systems &amp; Business Workflows">
+  <meta name="twitter:description" content="Custom AI automation systems, backend workflows, and integrations for businesses that want to reduce manual work.">
   <meta name="twitter:image" content="https://patchtr.com/og-image.jpg">
   <meta name="twitter:image:alt" content="Patch Automation brand preview image">
 
@@ -37,11 +37,21 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": "WebSite",
     "name": "Patch Automation",
-    "url": "https://patchtr.com",
+    "alternateName": "Patch",
+    "url": "https://patchtr.com/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://patchtr.com/#organization",
+    "name": "Patch Automation",
+    "url": "https://patchtr.com/",
     "inLanguage": "en",
-    "description": "Custom automation systems, backend workflows, and integrations for modern business operations.",
+    "description": "Custom AI automation systems, business workflows, backend integrations, and custom automation systems for modern businesses.",
     "founder": {
       "@type": "Person",
       "name": "Efe Muhsin Pat"
@@ -55,8 +65,11 @@
   }
   </script>
 
-  <link rel="icon" href="P.svg" type="image/svg+xml" sizes="any">
-  <link rel="shortcut icon" href="P.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v=3">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png?v=3">
+  <link rel="shortcut icon" href="./favicon.ico?v=3">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=3">
+  <link rel="icon" href="./P.svg?v=3" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -284,6 +297,18 @@
       justify-items: center;
       transform: translateY(var(--hero-content-shift));
       transition: transform 260ms ease;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
     }
 
     .hero-wordmark {
@@ -930,12 +955,13 @@
     <div class="hero-container reveal">
       <div class="hero-layout">
         <div class="hero-content">
-          <h1 class="hero-wordmark">
+          <h1 class="sr-only">AI Automation Systems for Modern Businesses</h1>
+          <div class="hero-wordmark" aria-hidden="true">
             <span class="hero-wordmark-main">Patch</span>
             <span class="hero-wordmark-stack">
               <span class="hero-wordmark-sub">Automation</span>
             </span>
-          </h1>
+          </div>
           <p class="hero-tagline">One Patch for all</p>
           <div class="hero-actions">
             <a class="hero-action hero-action-primary" href="#solutions">View Solutions</a>
@@ -1218,7 +1244,7 @@
   <footer class="site-footer">
     <div class="content-shell footer-grid">
       <span>© 2026 Patch Automation. All rights reserved.</span>
-      <a class="inline-link" href="https://www.linkedin.com/in/efemuhsinpat" target="_blank" rel="noopener noreferrer" style="font-size:11px;color:var(--muted-soft);">LinkedIn</a>
+      <a class="inline-link" href="https://www.linkedin.com/company/patch-automation/" target="_blank" rel="noopener noreferrer" style="font-size:11px;color:var(--muted-soft);">LinkedIn</a>
     </div>
   </footer>
 
