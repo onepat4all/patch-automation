@@ -1259,11 +1259,34 @@
     // Küçük yardımcı fonksiyonlar.
     const clampValue = (value, min, max) => Math.min(Math.max(value, min), max);
     const easeOutCubic = (value) => 1 - Math.pow(1 - value, 3);
+    const mobileHeroMotionQuery = window.matchMedia("(max-width: 640px)");
 
     // Hero ve topbar motion sistemi:
     // Scroll ilerledikçe hero küçülür, üst bar sıkışır ve alt destek elemanları görünür olur.
     // Buradaki CSS variable'lar hem görsel yoğunluğu hem de layout yüksekliğini etkiler.
     const updateTopbarMotion = () => {
+      if (mobileHeroMotionQuery.matches) {
+        documentRoot.style.setProperty("--hero-main-scale", `1`);
+        documentRoot.style.setProperty("--hero-sub-opacity", `1`);
+        documentRoot.style.setProperty("--hero-sub-offset", `0px`);
+        documentRoot.style.setProperty("--hero-sub-margin-top", `8px`);
+        documentRoot.style.setProperty("--hero-sub-gap", `1px`);
+        documentRoot.style.setProperty("--hero-support-opacity", `1`);
+        documentRoot.style.setProperty("--hero-support-offset", `0px`);
+        documentRoot.style.setProperty("--hero-content-shift", `0px`);
+        documentRoot.style.setProperty("--hero-shell-min-height", `auto`);
+        documentRoot.style.setProperty("--hero-layout-min-height", `clamp(220px, 42vh, 340px)`);
+        documentRoot.style.setProperty("--hero-spacing-bottom-current", `56px`);
+        documentRoot.style.setProperty("--topbar-offset-y", `12px`);
+        documentRoot.style.setProperty("--topbar-padding-factor", `0.9`);
+        documentRoot.style.setProperty("--topbar-text-size", `15.5px`);
+        documentRoot.style.setProperty("--topbar-letter-spacing", `0.04em`);
+        documentRoot.style.setProperty("--topbar-text-color", `rgb(76 70 63)`);
+        documentRoot.style.setProperty("--topbar-text-opacity", `1`);
+        documentRoot.style.setProperty("--topbar-text-scale", `1`);
+        return;
+      }
+
       const scrollProgress = clampValue(window.scrollY / 220, 0, 1);
       const easedProgress = easeOutCubic(scrollProgress);
       const nextSectionPeek = 84;
@@ -1319,7 +1342,7 @@
       }
 
       const scrollOffset = window.innerWidth <= 640 ? 64 : 72;
-      const collapseThreshold = 220;
+      const collapseThreshold = mobileHeroMotionQuery.matches ? 0 : 220;
 
       if (window.scrollY < collapseThreshold) {
         window.scrollTo({ top: collapseThreshold, behavior: "auto" });
@@ -1348,6 +1371,7 @@
     // İlk yükleme ve scroll takibi.
     updateTopbarMotion();
     window.addEventListener("scroll", scheduleTopbarMotionUpdate, { passive: true });
+    mobileHeroMotionQuery.addEventListener("change", updateTopbarMotion);
 
     solutionsJumpLinks.forEach((link) => {
       link.addEventListener("click", (event) => {
