@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.patchtr.com"
+        }
+      ],
+      "destination": "https://patchtr.com/:path*",
+      "permanent": true
+    }
+  ]
+}
